@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ridex - Rent your favourite car</title>
+
+  <!-- {% load static %}
+
+
+    - favicon
+  -->
+  <link rel="shortcut icon" href="{% static 'favicon.svg' %}" type="image/svg+xml">
+
+<!-- custom css link -->
+<link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-papSxYLc0HJL30QxKPL3KmXTVr5DBc59aw4sXuYLJ+H7Xcd1rSjf+Hh09EfTe91/Bv4Qm6VHIgZgZL6eYBvViw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+<style>
+    /* Mobile Menu Styles */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px; /* Adjust the width as needed */
+    height: 100vh;
+    background-color: #fff; /* Background color */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(100%); /* Initially hide the menu */
+    transition: transform 0.3s ease; /* Smooth animation */
+    z-index: 1000; /* Make sure it's above other elements */
+}
+
+.mobile-menu.active {
+    transform: translateX(0); /* Show the menu when active */
+}
+
+.mobile-menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-menu-link {
+    display: block;
+    padding: 15px 20px; /* Adjust padding as needed */
+    text-decoration: none;
+    color: #333; /* Text color */
+    border-bottom: 1px solid #eee; /* Divider between links */
+}
+
+.mobile-menu-link:hover {
+    background-color: #f4f4f4; /* Highlight on hover */
+}
+
+/* Hide the Explore Cars button on larger screens */
+
+@media (min-width: 768px) { /* Adjust the breakpoint as necessary */
+    #featuredCarButton {
+        display: none; /* Hide the button */
+    }
+}
+</style>
+
+  <!--
+    - #HEADER
+  -->
+
+ <header class="header" data-header>
+    <div class="container">
+
+        <div class="overlay" data-overlay></div>
+
+        <a href="/" class="logo">
+            <img src="{% static 'logo_clear.png' %}" alt="Ridex logo" width="108">
+        </a>
+
+        <nav class="navbar" data-navbar>
+            <ul class="navbar-list">
+                <li><a href="/" class="navbar-link" data-nav-link>Home</a></li>
+                <li><a href="/listings/" class="navbar-link" data-nav-link>Listing</a></li>
+                <li><a href="/about_us/" class="navbar-link" data-nav-link>About us</a></li>
+                <li><a href="/financing/" class="navbar-link" data-nav-link>Financing</a></li>
+                <li><a href="/shipping/" class="navbar-link" data-nav-link>Shipping</a></li>
+                 <li><a href="/dealer_warranty/" class="navbar-link" data-nav-link>Dealer Warranty</a></li>
+                <li><a href="/contact_us/" class="navbar-link" data-nav-link>Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <div class="header-contact">
+                <a href="tel:88002345678" class="contact-link">8 800 234 56 78</a>
+                <span class="contact-time">Mon - Sat: 9:00 am - 6:00 pm</span>
+            </div>
+
+            <a href="#featured-car" class="btn" aria-labelledby="aria-label-txt" id="featuredCarButton">
+                <ion-icon name="car-outline"></ion-icon>
+                <span id="aria-label-txt">Explore cars</span>
+            </a>
+
+            <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+                <span class="one"></span>
+                <span class="two"></span>
+                <span class="three"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-menu-list">
+                <li><a href="/" class="mobile-menu-link">Home</a></li>
+                <li><a href="/listings/" class="mobile-menu-link">Listing</a></li>
+                <li><a href="/about_us/" class="mobile-menu-link">About us</a></li>
+                <li><a href="/financing/" class="mobile-menu-link">Financing</a></li>
+                <li><a href="/shipping/" class="mobile-menu-link">Shipping</a></li>
+                <li><a href="/dealer_warranty/" class="mobile-menu-link">Dealer Warranty</a></li>
+                <li><a href="/contact_us/" class="mobile-menu-link">Contact Us</a></li>
+
+            </ul>
+        </div>
+
+    </div>
+</header>
+
+
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+    const navToggleBtn = document.querySelector('[data-nav-toggle-btn]');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const overlay = document.querySelector('[data-overlay]');
+    const featuredCarButton = document.getElementById('featuredCarButton');
+
+    // Function to open the mobile menu
+    function openMobileMenu() {
+        mobileMenu.classList.add('active'); // Show the mobile menu
+        overlay.classList.add('active'); // Show overlay
+    }
+
+    // Toggle button event listener
+    navToggleBtn.addEventListener('click', function() {
+        if (mobileMenu.classList.contains('active')) {
+            mobileMenu.classList.remove('active'); // Hide the menu if it's already active
+            overlay.classList.remove('active'); // Hide overlay
+        } else {
+            openMobileMenu(); // Open the mobile menu
+        }
+    });
+
+    // Featured car button event listener
+    featuredCarButton.addEventListener('click', function(event) {
+        console.log('pressed');
+        event.preventDefault(); // Prevent the default anchor behavior
+        openMobileMenu(); // Open the mobile menu
+        // Optionally, scroll to the featured car section
+        const featuredCarSection = document.querySelector('#featured-car');
+        if (featuredCarSection) {
+            featuredCarSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+
+    // Overlay click event to close the mobile menu
+    overlay.addEventListener('click', function() {
+        mobileMenu.classList.remove('active'); // Hide menu when clicking on overlay
+        overlay.classList.remove('active'); // Hide overlay
+    });
+});
+
+
+</script>

@@ -1,0 +1,817 @@
+{% load static %}
+ {% include 'pages/top.html' %}
+
+<!-- Swiper CSS -->
+ 
+
+<style>
+    @media (min-width: 768px) {
+        .hero-banner {
+            display: block;
+            background: url({% static 'index.webp' %}) no-repeat !important;
+            background-size: cover;
+            background-position: left;
+            position: absolute;
+            top: 100px;
+            bottom: 50px;
+            left: 65%;
+            width: 600px;
+            border-radius: 30px;
+            z-index: -1;
+        }
+    }
+</style>
+
+
+  <main>
+    <article>
+
+      <!--
+        - #HERO
+      -->
+
+      <section class="section hero" id="home">
+        <div class="container">
+
+          <div class="hero-content">
+            <h2 class="h1 hero-title">The easy way to takeover a lease</h2>
+
+            <p class="hero-text">
+              Live in New York, New Jerset and Connecticut!
+            </p>
+          </div>
+
+          <div class="hero-banner"></div>
+
+         <form action="{% url 'listings' %}" method="GET" class="hero-form">
+    <div class="input-wrapper">
+        <label for="input-1" class="input-label">Car Brand</label>
+        <input type="text" name="mark" id="input-1" class="input-field" placeholder="What brand are you looking for?">
+    </div>
+
+    <div class="input-wrapper">
+        <label for="input-2" class="input-label">Car Model</label>
+        <input type="text" name="model" id="input-2" class="input-field" placeholder="What model are you looking for?">
+    </div>
+
+    <div class="input-wrapper">
+        <label for="input-3" class="input-label">Make Year</label>
+        <input type="text" name="year" id="input-3" class="input-field" placeholder="Add a minimal make year">
+    </div>
+
+    <button type="submit" class="btn">Search</button>
+</form>
+
+
+        </div>
+      </section>
+
+
+
+
+<style>
+    /* Swiper Container */
+.swiper-container.featured-car-carousel {
+  padding: 40px 0;
+}
+
+/* Swiper Slide */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+/* Featured Car Card Styling */
+.featured-car-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 350px;
+}
+
+.featured-car-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Banner Image */
+.card-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Card Content */
+.card-content {
+  padding: 20px;
+}
+
+/* Card Title Wrapper */
+.card-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Card Title */
+.card-title {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 600;
+  margin: 0;
+}
+
+.card-title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-title a:hover {
+  color: #007BFF;
+}
+
+/* Year Data */
+.year {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Card List */
+.card-list {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-list-item {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 8px;
+}
+
+.card-list-item ion-icon {
+  margin-right: 8px;
+  color: #007BFF;
+  font-size: 1.2rem;
+}
+
+.card-item-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Card Price Wrapper */
+.card-price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+/* Card Price */
+.card-price {
+  font-size: 1.4rem;
+  color: #333;
+  margin: 0;
+}
+
+/* Favorite Button */
+.fav-btn {
+  background: none;
+  border: none;
+  color: #e74c3c;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.fav-btn:hover {
+  color: #c0392b;
+}
+
+/* Rent Now Button */
+.btn-primary {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Swiper Pagination Dots */
+.swiper-pagination-bullet {
+  background: #007BFF;
+  opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+  background: #0056b3;
+  opacity: 1;
+}
+
+/* Navigation Arrows Below the Carousel */
+.swiper-navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: #fff;
+  border: 1px solid #007BFF;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.swiper-button-next ion-icon,
+.swiper-button-prev ion-icon {
+  font-size: 1.2rem;
+  color: #007BFF;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #007BFF;
+  border-color: #0056b3;
+}
+
+.swiper-button-next:hover ion-icon,
+.swiper-button-prev:hover ion-icon {
+  color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .featured-car-card {
+    max-width: 300px;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-price {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-list-item {
+    width: 100%;
+  }
+
+  .featured-car-card {
+    max-width: 100%;
+  }
+
+  .swiper-navigation {
+    margin-top: 15px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 35px;
+    height: 35px;
+    margin: 0 5px;
+  }
+
+  .swiper-button-next ion-icon,
+  .swiper-button-prev ion-icon {
+    font-size: 1rem;
+  }
+}
+
+</style>
+      <!--
+        - #FEATURED CAR
+      -->
+
+    <section class="section featured-car" id="featured-car">
+  <div class="container">
+    <div class="title-wrapper">
+      <h2 class="h2 section-title">Featured Cars</h2>
+      <a href="/listings/" class="featured-car-link">
+        <span>View More</span>
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </a>
+    </div>
+
+    <!-- Swiper -->
+    <div class="swiper-container featured-car-carousel">
+      <div class="swiper-wrapper">
+        {% for car in cars|slice:":5" %}
+        <div class="swiper-slide">
+          <div class="featured-car-card">
+            <figure class="card-banner">
+              <a href="{% url 'car_detail' car.pk %}">
+                <img
+                  src="{{ car.photo.url }}"
+                  alt="{{ car.mark }} {{ car.model }}"
+                  loading="lazy"
+                  class="w-100"
+                />
+              </a>
+            </figure>
+            <div class="card-content">
+              <div class="card-title-wrapper">
+                <h3 class="h3 card-title">
+                  <a href="{% url 'car_detail' car.pk %}">{{ car.mark }} {{ car.model }}</a>
+                </h3>
+                <data class="year" value="{{ car.year }}">{{ car.year }}</data>
+              </div>
+              <ul class="card-list">
+                <li class="card-list-item">
+                  <ion-icon name="people-outline"></ion-icon>
+                  <span class="card-item-text">4 People</span>
+                </li>
+                <li class="card-list-item">
+                  <ion-icon name="flash-outline"></ion-icon>
+                  <span class="card-item-text">{{ car.fuel_type }}</span>
+                </li>
+                <li class="card-list-item">
+                  <ion-icon name="speedometer-outline"></ion-icon>
+                  <span class="card-item-text">{{ car.miles }} miles</span>
+                </li>
+                <li class="card-list-item">
+                  <ion-icon name="hardware-chip-outline"></ion-icon>
+                  <span class="card-item-text">{{ car.transmission }}</span>
+                </li>
+                <li class="card-list-item">
+                  <ion-icon name="cog-outline"></ion-icon>
+                  <span class="card-item-text">{{ car.engine_size }}L Engine</span>
+                </li>
+                <li class="card-list-item">
+                  <ion-icon name="color-palette-outline"></ion-icon>
+                  <span class="card-item-text">{{ car.color }}</span>
+                </li>
+              </ul>
+              <div class="card-price-wrapper">
+                <p class="card-price">
+                  <strong>${{ car.price }}</strong>
+                </p>
+                <button class="btn fav-btn" aria-label="Add to favourite list">
+                  <ion-icon name="heart-outline"></ion-icon>
+                </button>
+                <a href="" class="btn btn-primary">View Car</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Navigation Arrows Below the Carousel -->
+
+  </div>
+</section>
+
+<!-- Initialize Swiper -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper('.featured-car-carousel', {
+      loop: true,
+      spaceBetween: 30,
+      centeredSlides: true,
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+        640: {
+          slidesPerView: 1.5,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-navigation .swiper-button-next',
+        prevEl: '.swiper-navigation .swiper-button-prev',
+      },
+      a11y: {
+        enabled: true,
+        prevSlideMessage: 'Previous slide',
+        nextSlideMessage: 'Next slide',
+        paginationBulletMessage: 'Go to slide {{index}}',
+      },
+    });
+  });
+</script>
+
+
+
+
+
+
+
+      <!--
+        - #GET START
+      -->
+
+      <section class="section get-start">
+        <div class="container">
+
+          <h2 class="h2 section-title">Get started with 4 simple steps</h2>
+
+          <ul class="get-start-list">
+
+            <li>
+              <div class="get-start-card">
+
+                <div class="card-icon icon-1">
+                  <ion-icon name="person-add-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title">Get in contact</h3>
+
+                <p class="card-text">
+                  If you are looking for help on achieving your dream car.
+                </p>
+
+
+
+              </div>
+            </li>
+
+            <li>
+              <div class="get-start-card">
+
+                <div class="card-icon icon-2">
+                  <ion-icon name="car-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title">Tell us what car you want</h3>
+
+                <p class="card-text">
+  Explore a wide selection of vehicles tailored to fit your needs and budget.                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="get-start-card">
+
+                <div class="card-icon icon-3">
+                  <ion-icon name="person-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title">Match with seller</h3>
+
+                <p class="card-text">
+                  Our experienced team is here to assist you in finding the perfect vehicle
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="get-start-card">
+
+                <div class="card-icon icon-4">
+                  <ion-icon name="card-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title">Make a deal</h3>
+
+                <p class="card-text">
+                  Enjoy a seamless buying experience with flexible financing options and support.
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <section class="section blog" id="blog">
+      <div class="container">
+
+  <h2 class="h2 section-title">Quick Information</h2>
+
+  <ul class="info-list has-scrollbar">
+
+    <li>
+      <div class="info-card">
+
+          <figure class="card-banner">
+              <img src="{% static 'offices.jpg' %}" alt="Office Relocation Update" loading="lazy" class="w-100">
+              <span class="btn card-badge">Update</span>
+        </figure>
+
+        <div class="card-content">
+          <h3 class="h3 card-title">Office Relocation Update</h3>
+          <p class="card-summary">
+            Our new office location is now open! Find us at the updated address for your appointments and queries.
+          </p>
+        </div>
+
+      </div>
+    </li>
+
+    <li>
+      <div class="info-card">
+
+        <figure class="card-banner">
+          <img src="{% static 'tips.jpg' %}" alt="Top Car Maintenance Tips" loading="lazy" class="w-100">
+          <span class="btn card-badge">Tips</span>
+        </figure>
+
+        <div class="card-content">
+          <h3 class="h3 card-title">Top Car Maintenance Tips</h3>
+          <p class="card-summary">
+            Regularly check tire pressure, engine oil, and coolant to keep your car running smoothly.
+          </p>
+        </div>
+
+      </div>
+    </li>
+
+    <li>
+      <div class="info-card">
+
+        <figure class="card-banner">
+          <img src="{% static 'electric.jpg' %}" alt="What’s New in the Car Market" loading="lazy" class="w-100">
+          <span class="btn card-badge">Market</span>
+        </figure>
+
+        <div class="card-content">
+          <h3 class="h3 card-title">What’s New in the Car Market</h3>
+          <p class="card-summary">
+            Electric cars are gaining popularity—check out the latest models from top manufacturers.
+          </p>
+        </div>
+
+      </div>
+    </li>
+
+    <li>
+      <div class="info-card">
+
+        <figure class="card-banner">
+          <img src="{% static 'road-safety.webp' %}" alt="Road Safety Tips" loading="lazy" class="w-100">
+          <span class="btn card-badge">Safety</span>
+        </figure>
+
+        <div class="card-content">
+          <h3 class="h3 card-title">Road Safety Tips</h3>
+          <p class="card-summary">
+            Always wear your seatbelt, follow speed limits, and avoid distractions while driving.
+          </p>
+        </div>
+
+      </div>
+    </li>
+
+    <li>
+      <div class="info-card">
+
+        <figure class="card-banner">
+          <img src="{% static 'fuel.jpg' %}" alt="How to Save on Fuel" loading="lazy" class="w-100">
+          <span class="btn card-badge">Savings</span>
+        </figure>
+
+        <div class="card-content">
+          <h3 class="h3 card-title">How to Save on Fuel</h3>
+          <p class="card-summary">
+            Keep your tires properly inflated, avoid rapid acceleration, and stick to regular maintenance.
+          </p>
+        </div>
+
+      </div>
+    </li>
+
+  </ul>
+
+</div>
+
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!--
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="{% static 'logo_clear.png' %}" alt="Ridex logo" width="108">
+          </a>
+
+          <p class="footer-text">
+            Search for cheap rental cars in New York. With a diverse fleet of 19,000 vehicles, Waydex offers its
+            consumers an
+            attractive and fun selection.
+          </p>
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Company</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Pricing plans</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Our blog</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contacts</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Support</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Help center</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Ask a question</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms & conditions</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Neighborhoods in New York</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Manhattan</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Central New York City</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Upper East Side</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Queens</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Theater District</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Midtown</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">SoHo</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Chelsea</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-skype"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <p class="copyright">
+          &copy; 2022 <a href="#">codewithsadee</a>. All Rights Reserved
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

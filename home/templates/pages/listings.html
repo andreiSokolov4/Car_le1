@@ -1,0 +1,141 @@
+{% load static %}
+ {% include 'pages/top.html' %}
+
+
+
+    <!-- Your listings content goes here -->
+<div style="margin-top: 6%;">
+<div style="
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    align-items: center;
+">
+<h1>Listings</h1>
+    <!-- Filter Form -->
+    <div style="margin-bottom: 20px;">
+        <div class="hero-form">
+            <div class="input-wrapper">
+              <label for="make" class="input-label">Make</label>
+                <select name="make" id="make" class="input-field">
+                    <option value="">Any</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Ford">Ford</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+
+
+
+
+
+            <!-- New Dropdown Filters -->
+            <div class="input-wrapper">
+                <label for="make" class="input-label">Mileage</label>
+                <select name="make" id="make" class="input-field">
+                    <option value="">Any</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Ford">Ford</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+
+            <div class="input-wrapper">
+                <label for="body-type" class="input-label">Body Type</label>
+                <select name="body-type" id="body-type" class="input-field">
+                    <option value="">Any</option>
+                    <option value="Sedan">Sedan</option>
+                    <option value="SUV">SUV</option>
+                    <option value="Truck">Truck</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+
+            <div class="input-wrapper">
+                <label for="sort_by" class="input-label">Sort</label>
+                <select id="sort_by" name="sort_by" class="input-field">
+                    <option value="price">Price</option>
+                    <option value="year">Year</option>
+                    <option value="miles">Miles</option>
+                </select>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+    {% if cars.exists %}
+          <ul class="featured-car-list">
+             {% for car in cars %}
+<li>
+    <div class="featured-car-card">
+        <figure class="card-banner">
+            <a href="{% url 'car_detail' car.pk %}">
+                <img src="{{ car.photo.url }}" alt="{{ car.mark }} {{ car.model }}" loading="lazy" width="440" height="300" class="w-100">
+            </a>
+        </figure>
+        <div class="card-content">
+            <div class="card-title-wrapper">
+                <h3 class="h3 card-title">
+                    <a href="{% url 'car_detail' car.pk %}">{{ car.mark }} {{ car.model }}</a>
+                </h3>
+                <data class="year" value="{{ car.year }}">{{ car.year }}</data>
+            </div>
+            <ul class="card-list">
+                <li class="card-list-item">
+                    <ion-icon name="people-outline"></ion-icon>
+                    <span class="card-item-text">4 People</span>
+                </li>
+                <li class="card-list-item">
+                    <ion-icon name="flash-outline"></ion-icon>
+                    <span class="card-item-text">{{ car.fuel_type }}</span>
+                </li>
+                <li class="card-list-item">
+                    <ion-icon name="speedometer-outline"></ion-icon>
+                    <span class="card-item-text">{{ car.miles }} miles</span>
+                </li>
+                <li class="card-list-item">
+                    <ion-icon name="hardware-chip-outline"></ion-icon>
+                    <span class="card-item-text">{{ car.transmission }}</span>
+                </li>
+                <li class="card-list-item">
+                    <ion-icon name="cog-outline"></ion-icon>
+                    <span class="card-item-text">{{ car.engine_size }}L Engine</span>
+                </li>
+                <li class="card-list-item">
+                    <ion-icon name="color-palette-outline"></ion-icon>
+                    <span class="card-item-text">{{ car.color }}</span>
+                </li>
+            </ul>
+            <div class="card-price-wrapper">
+                <p class="card-price">
+                    <strong>${{ car.price }}</strong>
+                </p>
+                <button class="btn fav-btn" aria-label="Add to favourite list">
+                    <ion-icon name="heart-outline"></ion-icon>
+                </button>
+                <button class="btn">View More Info</button>
+            </div>
+        </div>
+    </div>
+</li>
+{% endfor %}
+
+
+
+          </ul>
+{% else %}
+  <center>  <div class="no-cars" style="color: gray; text-align: center; margin: 60px;">
+      <p>No cars available with the selected filters.</p>
+    </div></center>
+  {% endif %}
+</div>
+
+
+{% include 'pages/footer.html' %}
