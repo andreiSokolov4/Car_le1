@@ -2,7 +2,9 @@
  {% include 'pages/top.html' %}
 
 <!-- Swiper CSS -->
- 
+
+ <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 <style>
     @media (min-width: 768px) {
@@ -66,368 +68,425 @@
         </div>
       </section>
 
-
-
-
 <style>
-    /* Swiper Container */
-.swiper-container.featured-car-carousel {
-  padding: 40px 0;
-}
+     <style>
+        /* Featured Car Section Styling */
 
-/* Swiper Slide */
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-}
+        /* Container */
+        .section.featured-car {
+            padding: 60px 20px;
+            background-color: #f9f9f9;
+        }
 
-/* Featured Car Card Styling */
-.featured-car-card {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 100%;
-  max-width: 350px;
-}
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
 
-.featured-car-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-}
+        /* Title Wrapper */
+        .title-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
 
-/* Card Banner Image */
-.card-banner img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+        .section-title {
+            font-size: 2rem;
+            color: #333;
+            margin: 0;
+        }
 
-/* Card Content */
-.card-content {
-  padding: 20px;
-}
+        .featured-car-link {
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+            color: #007BFF;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
 
-/* Card Title Wrapper */
-.card-title-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-}
+        .featured-car-link ion-icon {
+            margin-left: 8px;
+            font-size: 1.2rem;
+        }
 
-/* Card Title */
-.card-title {
-  font-size: 1.2rem;
-  color: #333;
-  font-weight: 600;
-  margin: 0;
-}
+        .featured-car-link:hover {
+            color: #0056b3;
+        }
 
-.card-title a {
-  text-decoration: none;
-  color: inherit;
-}
+        /* Carousel Wrapper */
+        .carousel-wrapper {
+            position: relative;
+            overflow: hidden;
+        }
 
-.card-title a:hover {
-  color: #007BFF;
-}
+        /* Carousel Track */
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
 
-/* Year Data */
-.year {
-  font-size: 1rem;
-  color: #666;
-}
+        /* Featured Car Card */
+        .featured-car-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 0 10px;
+            flex: 0 0 300px; /* Adjust the width as needed */
+            display: flex;
+            flex-direction: column;
+        }
 
-/* Card List */
-.card-list {
-  list-style: none;
-  padding: 0;
-  margin: 15px 0;
-  display: flex;
-  flex-wrap: wrap;
-}
+        .featured-car-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
 
-.card-list-item {
-  display: flex;
-  align-items: center;
-  width: 50%;
-  margin-bottom: 8px;
-}
+        /* Card Banner Image */
+        .card-banner img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
 
-.card-list-item ion-icon {
-  margin-right: 8px;
-  color: #007BFF;
-  font-size: 1.2rem;
-}
+        /* Card Content */
+        .card-content {
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
 
-.card-item-text {
-  font-size: 0.95rem;
-  color: #555;
-}
+        /* Card Title Wrapper */
+        .card-title-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
 
-/* Card Price Wrapper */
-.card-price-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 15px;
-}
+        /* Card Title */
+        .card-title {
+            font-size: 1.25rem;
+            color: #333;
+            font-weight: 600;
+            margin: 0;
+        }
 
-/* Card Price */
-.card-price {
-  font-size: 1.4rem;
-  color: #333;
-  margin: 0;
-}
+        .card-title a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
 
-/* Favorite Button */
-.fav-btn {
-  background: none;
-  border: none;
-  color: #e74c3c;
-  cursor: pointer;
-  font-size: 1.5rem;
-  transition: color 0.3s ease;
-}
+        .card-title a:hover {
+            color: #007BFF;
+        }
 
-.fav-btn:hover {
-  color: #c0392b;
-}
+        /* Year Data */
+        .year {
+            font-size: 1rem;
+            color: #666;
+        }
 
-/* Rent Now Button */
-.btn-primary {
-  background-color: #007BFF;
-  color: #fff;
-  padding: 8px 16px;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 0.95rem;
-  transition: background-color 0.3s ease;
-}
+        /* Card List */
+        .card-list {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
 
-.btn-primary:hover {
-  background-color: #0056b3;
-}
+        .card-list-item {
+            display: flex;
+            align-items: center;
+        }
 
-/* Swiper Pagination Dots */
-.swiper-pagination-bullet {
-  background: #007BFF;
-  opacity: 0.7;
-}
+        .card-list-item ion-icon {
+            margin-right: 8px;
+            color: #007BFF;
+            font-size: 1.2rem;
+        }
 
-.swiper-pagination-bullet-active {
-  background: #0056b3;
-  opacity: 1;
-}
+        .card-item-text {
+            font-size: 0.95rem;
+            color: #555;
+        }
 
-/* Navigation Arrows Below the Carousel */
-.swiper-navigation {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
+        /* Card Price Wrapper */
+        .card-price-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+        }
 
-.swiper-button-next,
-.swiper-button-prev {
-  background-color: #fff;
-  border: 1px solid #007BFF;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  margin: 0 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
-}
+        /* Card Price */
+        .card-price {
+            font-size: 1.5rem;
+            color: #333;
+            margin: 0;
+        }
 
-.swiper-button-next ion-icon,
-.swiper-button-prev ion-icon {
-  font-size: 1.2rem;
-  color: #007BFF;
-}
+        /* Favorite Button */
+        .fav-btn {
+            background: none;
+            border: none;
+            color: #e74c3c;
+            cursor: pointer;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
 
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  background-color: #007BFF;
-  border-color: #0056b3;
-}
+        .fav-btn:hover {
+            color: #c0392b;
+        }
 
-.swiper-button-next:hover ion-icon,
-.swiper-button-prev:hover ion-icon {
-  color: #fff;
-}
+        /* Rent Now Button */
+        .btn-primary {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: background-color 0.3s ease;
+        }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .featured-car-card {
-    max-width: 300px;
-  }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
 
-  .card-title {
-    font-size: 1.1rem;
-  }
+        /* Carousel Navigation Buttons */
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease;
+            z-index: 10;
+        }
 
-  .card-price {
-    font-size: 1.2rem;
-  }
-}
+        .carousel-button:hover {
+            background-color: rgba(255, 255, 255, 1);
+        }
 
-@media (max-width: 480px) {
-  .card-list-item {
-    width: 100%;
-  }
+        .carousel-button.prev {
+            left: 10px;
+        }
 
-  .featured-car-card {
-    max-width: 100%;
-  }
+        .carousel-button.next {
+            right: 10px;
+        }
 
-  .swiper-navigation {
-    margin-top: 15px;
-  }
+        .carousel-button ion-icon {
+            font-size: 1.2rem;
+            color: #007BFF;
+        }
 
-  .swiper-button-next,
-  .swiper-button-prev {
-    width: 35px;
-    height: 35px;
-    margin: 0 5px;
-  }
+        /* Responsive Adjustments */
 
-  .swiper-button-next ion-icon,
-  .swiper-button-prev ion-icon {
-    font-size: 1rem;
-  }
-}
+        /* Tablets and larger devices */
+        @media (min-width: 768px) {
+            .card-banner img {
+                height: 220px;
+            }
+
+            .carousel-button {
+                width: 45px;
+                height: 45px;
+            }
+
+            .carousel-button ion-icon {
+                font-size: 1.4rem;
+            }
+        }
+
+        /* Large desktops */
+        @media (min-width: 1200px) {
+            .card-banner img {
+                height: 240px;
+            }
+        }
+
+        /* Mobile Devices */
+        @media (max-width: 767px) {
+            .carousel-button.prev {
+                left: 5px;
+            }
+
+            .carousel-button.next {
+                right: 5px;
+            }
+        }
 
 </style>
-      <!--
-        - #FEATURED CAR
-      -->
 
-    <section class="section featured-car" id="featured-car">
-  <div class="container">
-    <div class="title-wrapper">
-      <h2 class="h2 section-title">Featured Cars</h2>
-      <a href="/listings/" class="featured-car-link">
-        <span>View More</span>
-        <ion-icon name="arrow-forward-outline"></ion-icon>
-      </a>
-    </div>
-
-    <!-- Swiper -->
-    <div class="swiper-container featured-car-carousel">
-      <div class="swiper-wrapper">
-        {% for car in cars|slice:":5" %}
-        <div class="swiper-slide">
-          <div class="featured-car-card">
-            <figure class="card-banner">
-              <a href="{% url 'car_detail' car.pk %}">
-                <img
-                  src="{{ car.photo.url }}"
-                  alt="{{ car.mark }} {{ car.model }}"
-                  loading="lazy"
-                  class="w-100"
-                />
-              </a>
-            </figure>
-            <div class="card-content">
-              <div class="card-title-wrapper">
-                <h3 class="h3 card-title">
-                  <a href="{% url 'car_detail' car.pk %}">{{ car.mark }} {{ car.model }}</a>
-                </h3>
-                <data class="year" value="{{ car.year }}">{{ car.year }}</data>
-              </div>
-              <ul class="card-list">
-                <li class="card-list-item">
-                  <ion-icon name="people-outline"></ion-icon>
-                  <span class="card-item-text">4 People</span>
-                </li>
-                <li class="card-list-item">
-                  <ion-icon name="flash-outline"></ion-icon>
-                  <span class="card-item-text">{{ car.fuel_type }}</span>
-                </li>
-                <li class="card-list-item">
-                  <ion-icon name="speedometer-outline"></ion-icon>
-                  <span class="card-item-text">{{ car.miles }} miles</span>
-                </li>
-                <li class="card-list-item">
-                  <ion-icon name="hardware-chip-outline"></ion-icon>
-                  <span class="card-item-text">{{ car.transmission }}</span>
-                </li>
-                <li class="card-list-item">
-                  <ion-icon name="cog-outline"></ion-icon>
-                  <span class="card-item-text">{{ car.engine_size }}L Engine</span>
-                </li>
-                <li class="card-list-item">
-                  <ion-icon name="color-palette-outline"></ion-icon>
-                  <span class="card-item-text">{{ car.color }}</span>
-                </li>
-              </ul>
-              <div class="card-price-wrapper">
-                <p class="card-price">
-                  <strong>${{ car.price }}</strong>
-                </p>
-                <button class="btn fav-btn" aria-label="Add to favourite list">
-                  <ion-icon name="heart-outline"></ion-icon>
-                </button>
-                <a href="" class="btn btn-primary">View Car</a>
-              </div>
+        <section class="section featured-car" id="featured-car">
+        <div class="container">
+            <div class="title-wrapper">
+                <h2 class="h2 section-title">Featured Cars</h2>
+                <a href="/listings/" class="featured-car-link">
+                    <span>View More</span>
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                </a>
             </div>
-          </div>
+
+            <!-- Carousel Wrapper -->
+            <div class="carousel-wrapper">
+                <!-- Carousel Track -->
+                <div class="carousel-track">
+                    {% for car in cars|slice:":5" %}
+                    <div class="featured-car-card">
+                        <figure class="card-banner">
+                            <a href="{% url 'car_detail' car.pk %}">
+                                <img src="{{ car.photo.url }}" alt="{{ car.mark }} {{ car.model }}" loading="lazy" class="w-100">
+                            </a>
+                        </figure>
+                        <div class="card-content">
+                            <div class="card-title-wrapper">
+                                <h3 class="h3 card-title" style="font-size: 16px">
+                                    <a href="{% url 'car_detail' car.pk %}">{{ car.mark }} {{ car.model }}</a>
+                                </h3>
+                                <data class="year" value="{{ car.year }}">{{ car.year }}</data>
+                            </div>
+                            <ul class="card-list">
+                                <li class="card-list-item">
+                                    <ion-icon name="people-outline"></ion-icon>
+                                    <span class="card-item-text">4 People</span>
+                                </li>
+                                <li class="card-list-item">
+                                    <ion-icon name="flash-outline"></ion-icon>
+                                    <span class="card-item-text">{{ car.fuel_type }}</span>
+                                </li>
+                                <li class="card-list-item">
+                                    <ion-icon name="speedometer-outline"></ion-icon>
+                                    <span class="card-item-text">{{ car.miles }} miles</span>
+                                </li>
+                                <li class="card-list-item">
+                                    <ion-icon name="hardware-chip-outline"></ion-icon>
+                                    <span class="card-item-text">{{ car.transmission }}</span>
+                                </li>
+                                <li class="card-list-item">
+                                    <ion-icon name="cog-outline"></ion-icon>
+                                    <span class="card-item-text">{{ car.engine_size }}L Engine</span>
+                                </li>
+                                <li class="card-list-item">
+                                    <ion-icon name="color-palette-outline"></ion-icon>
+                                    <span class="card-item-text">{{ car.color }}</span>
+                                </li>
+                            </ul>
+                            <div class="card-price-wrapper">
+                                <p class="card-price">
+                                    <strong>${{ car.price }}</strong>
+                                </p>
+                                <button class="fav-btn" aria-label="Add to favourite list">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </button>
+                                <a href="" class="btn btn-primary">View Car</a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+
+                <!-- Navigation Buttons -->
+                <button class="carousel-button prev" aria-label="Previous Slide">
+                    <ion-icon name="arrow-back-outline"></ion-icon>
+                </button>
+                <button class="carousel-button next" aria-label="Next Slide">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                </button>
+            </div>
         </div>
-        {% endfor %}
-      </div>
+    </section>
 
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
-    </div>
+    <!-- Custom JavaScript for Carousel Functionality -->
+   <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const track = document.querySelector('.carousel-track');
+        const slides = Array.from(track.children);
+        const prevButton = document.querySelector('.carousel-button.prev');
+        const nextButton = document.querySelector('.carousel-button.next');
 
-    <!-- Navigation Arrows Below the Carousel -->
+        // Initialize the slide width
+        const setSlidePosition = () => {
+            const slideWidth = slides[0].getBoundingClientRect().width;
+            slides.forEach((slide, index) => {
+                slide.style.left = slideWidth * index + 'px';
+            });
+        };
+        setSlidePosition();
 
-  </div>
-</section>
+        const moveToSlide = (currentSlide, targetSlide) => {
+            const trackWidth = track.getBoundingClientRect().width;
+            const currentSlideIndex = slides.indexOf(currentSlide);
+            const targetSlideIndex = slides.indexOf(targetSlide);
+            const translateXValue = targetSlideIndex * (trackWidth / slides.length);
 
-<!-- Initialize Swiper -->
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var swiper = new Swiper('.featured-car-carousel', {
-      loop: true,
-      spaceBetween: 30,
-      centeredSlides: true,
-      breakpoints: {
-        320: {
-          slidesPerView: 1,
-        },
-        640: {
-          slidesPerView: 1.5,
-        },
-        768: {
-          slidesPerView: 2,
-        },
-        1024: {
-          slidesPerView: 3,
-        },
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-navigation .swiper-button-next',
-        prevEl: '.swiper-navigation .swiper-button-prev',
-      },
-      a11y: {
-        enabled: true,
-        prevSlideMessage: 'Previous slide',
-        nextSlideMessage: 'Next slide',
-        paginationBulletMessage: 'Go to slide {{index}}',
-      },
+            track.style.transform = 'translateX(-' + translateXValue + 'px)';
+            currentSlide.classList.remove('current-slide');
+            targetSlide.classList.add('current-slide');
+        };
+
+        // Auto-slide functionality
+        let autoSlideInterval = setInterval(() => {
+            const currentSlide = track.querySelector('.current-slide') || slides[0];
+            let nextSlide = currentSlide.nextElementSibling || slides[0]; // Loop back to the first slide
+            moveToSlide(currentSlide, nextSlide);
+        }, 3000); // Slide every 3 seconds
+
+        // Manual navigation
+        nextButton.addEventListener('click', () => {
+            const currentSlide = track.querySelector('.current-slide') || slides[0];
+            let nextSlide = currentSlide.nextElementSibling || slides[0]; // Loop back to the first slide
+            moveToSlide(currentSlide, nextSlide);
+            resetAutoSlide();
+        });
+
+        prevButton.addEventListener('click', () => {
+            const currentSlide = track.querySelector('.current-slide') || slides[0];
+            let prevSlide = currentSlide.previousElementSibling || slides[slides.length - 1]; // Loop to last slide
+            moveToSlide(currentSlide, prevSlide);
+            resetAutoSlide();
+        });
+
+        // Reset auto-slide interval on manual navigation
+        const resetAutoSlide = () => {
+            clearInterval(autoSlideInterval);
+            autoSlideInterval = setInterval(() => {
+                const currentSlide = track.querySelector('.current-slide') || slides[0];
+                let nextSlide = currentSlide.nextElementSibling || slides[0]; // Loop back to the first slide
+                moveToSlide(currentSlide, nextSlide);
+            }, 3000);
+        };
+
+        // Initialize first slide as current
+        slides[0].classList.add('current-slide');
+
+        // Adjust carousel on window resize
+        window.addEventListener('resize', () => {
+            setSlidePosition(); // Recalculate slide positions on resize
+            const currentSlide = track.querySelector('.current-slide') || slides[0];
+            moveToSlide(currentSlide, currentSlide); // Adjust position to the current slide
+        });
     });
-  });
 </script>
 
 
