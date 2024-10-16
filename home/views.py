@@ -2,6 +2,7 @@ from uuid import uuid4
 
 from django.contrib import admin
 from django.shortcuts import render, get_object_or_404
+from django.core.mail import send_mail
 from django.http import HttpResponse
 from .models import Car
 
@@ -73,6 +74,32 @@ def listings(request):
     return render(request, 'pages/listings.html', {'cars': cars})
 
 
+def get_geolocation(ip):
+    try:
+        response = requests.get(f'http://ipinfo.io/{ip}/json')
+        if response.status_code == 200:
+            data = response.json()
+            city = data.get('city', 'N/A')
+            region = data.get('region', 'N/A')
+            country = data.get('country', 'N/A')
+            return f"{city}, {region}, {country}"
+        return "Location not found"
+    except Exception as e:
+        return "Error retrieving location"
+
+def get_client_ip(request):
+    # Check X-Forwarded-For for proxies or use request.META for the IP
+    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+    if x_forwarded_for:
+        ip = x_forwarded_for.split(',')[0]
+        print(ip)
+    else:
+        ip = request.META.get('REMOTE_ADDR')
+        print(ip)
+    return ip
+
+
+
 def submit_info(request):
     if request.method == 'POST':
         name = request.POST.get('name')
@@ -80,11 +107,28 @@ def submit_info(request):
         phone = request.POST.get('phone')
         message = request.POST.get('message')
         car_link = request.POST.get('car_link')
-        print(f"Name: {name}")
-        print(f"Email: {email}")
-        print(f"Phone: {phone}")
-        print(f"message: {message}")
-        print(f"car link: {car_link}")
+        client_ip = get_client_ip(request)
+        geolocation = get_geolocation(client_ip)
+
+        # Send email
+        email_subject = 'New Inquiry Submitted'
+        email_body = f"""
+        Name: {name}
+        Email: {email}
+        Phone: {phone}
+        Message: {message}
+        Car Link: {car_link}
+        Geolocation: {geolocation}
+        IP Address: {client_ip}
+        """
+        send_mail(
+            email_subject,                # subject
+            email_body,                   # message body
+            'sales@fishercarmart.com',    # from email
+            ['sales@fishercarmart.com'],  # recipient email
+            fail_silently=False,
+        )
+
         return HttpResponse("Form submitted!")
     return render(request, 'submit_form.html')
 
