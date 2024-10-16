@@ -1114,7 +1114,8 @@ document.getElementById('payment').textContent = totalPayment.toFixed(2);
         document.getElementById('loading').style.display = 'flex';
     }
     function sendreq2(){
-        document.getElementById('popmake-7964').style.display = 'none';
+        document.getElementById('financ').style.display = 'none';
+         document.getElementById('popmake-7964').style.display = 'none';
         document.getElementById('pum-7964').style.display = 'flex';
         document.getElementById('pum-7964').style.justifyContent = 'center';
         document.getElementById('pum-7964').style.alignItems = 'center';
@@ -1177,6 +1178,7 @@ document.getElementById('payment').textContent = totalPayment.toFixed(2);
 </style>
 
 <div id="financ" role="dialog" aria-modal="true" style="display: none; overflow-y: scroll; justify-content: center;" aria-labelledby="&quot;pum_popup_title_7967&quot;" class="pum pum-overlay pum-theme-7955 pum-theme-lightbox popmake-overlay click_open pum-active" data-popmake="{&quot;id&quot;:7967,&quot;slug&quot;:&quot;financial-form&quot;,&quot;theme_id&quot;:7955,&quot;cookies&quot;:[],&quot;triggers&quot;:[{&quot;type&quot;:&quot;click_open&quot;,&quot;settings&quot;:{&quot;extra_selectors&quot;:&quot;a[href=\&quot;#financial\&quot;]&quot;}}],&quot;mobile_disabled&quot;:null,&quot;tablet_disabled&quot;:null,&quot;meta&quot;:{&quot;display&quot;:{&quot;stackable&quot;:false,&quot;overlay_disabled&quot;:false,&quot;scrollable_content&quot;:false,&quot;disable_reposition&quot;:false,&quot;size&quot;:&quot;tiny&quot;,&quot;responsive_min_width&quot;:&quot;0%&quot;,&quot;responsive_min_width_unit&quot;:false,&quot;responsive_max_width&quot;:&quot;100%&quot;,&quot;responsive_max_width_unit&quot;:false,&quot;custom_width&quot;:&quot;640px&quot;,&quot;custom_width_unit&quot;:false,&quot;custom_height&quot;:&quot;380px&quot;,&quot;custom_height_unit&quot;:false,&quot;custom_height_auto&quot;:false,&quot;location&quot;:&quot;center top&quot;,&quot;position_from_trigger&quot;:false,&quot;position_top&quot;:&quot;100&quot;,&quot;position_left&quot;:&quot;0&quot;,&quot;position_bottom&quot;:&quot;0&quot;,&quot;position_right&quot;:&quot;0&quot;,&quot;position_fixed&quot;:false,&quot;animation_type&quot;:&quot;fade&quot;,&quot;animation_speed&quot;:&quot;350&quot;,&quot;animation_origin&quot;:&quot;center top&quot;,&quot;overlay_zindex&quot;:false,&quot;zindex&quot;:&quot;1999999999&quot;},&quot;close&quot;:{&quot;text&quot;:&quot;&quot;,&quot;button_delay&quot;:&quot;0&quot;,&quot;overlay_click&quot;:false,&quot;esc_press&quot;:false,&quot;f4_press&quot;:false},&quot;click_open&quot;:[]}}" style="opacity: 1; display: block;">
+<div id="loading2" style="display:none"><img src="https://i.sstatic.net/kOnzy.gif" style="width:60px; height:60px"></div>
 
 	<div id="popmake-7967" class="pum-container popmake theme-7955 pum-responsive pum-responsive-tiny responsive size-tiny custom-position active" style="min-width: 0%; max-width: 100%; top: 20px; opacity: 1; display: block;">
 
@@ -1278,7 +1280,7 @@ document.getElementById('payment').textContent = totalPayment.toFixed(2);
     <input type="checkbox" style="width: 20px" name="acceptance-807" value="1" aria-invalid="false"><span class="wpcf7-list-item-label">ACKNOWLEDGMENT AND CONSENT: I hereby consent to receive text messages or phone calls from or on behalf of the dealer or their employees to the mobile phone number I provided above. By opting in, I understand that message and data rates may apply. This acknowledgement constitutes my written consent to receive text messages to my cell phone and phone calls, including communications sent using an auto-dialer or pre-recorded message. You may withdraw your consent at any time by texting "STOP".</span></label></span></span></span>
 </p>
 <p>
-    <input style="background-color: #405FF2" class="wpcf7-form-control wpcf7-submit has-spinner btn btn-theme w-100" type="submit" value="Send Request">
+    <input style="background-color: #405FF2" class="wpcf7-form-control wpcf7-submit has-spinner btn btn-theme w-100" onclick="sendreq2()" type="submit" value="Send Request">
     <span class="wpcf7-spinner"></span>
 </p><input type="hidden" class="wpcf7-pum" value="{&quot;closepopup&quot;:false,&quot;closedelay&quot;:0,&quot;openpopup&quot;:false,&quot;openpopup_id&quot;:0}"><div class="wpcf7-response-output" aria-hidden="true"></div>
 </form>
@@ -1326,179 +1328,4 @@ document.getElementById('payment').textContent = totalPayment.toFixed(2);
 
 
 
-  <footer class="footer">
-    <div class="container">
-
-      <div class="footer-top">
-
-        <div class="footer-brand">
-          <a href="/" class="logo">
-<img src="{% static 'assets/images/logo.svg' %}" alt="Ridex logo">
-          </a>
-
-          <p class="footer-text">
-            Search for cheap rental cars in New York. With a diverse fleet of 19,000 vehicles, Waydex offers its
-            consumers an
-            attractive and fun selection.
-          </p>
-        </div>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Company</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">About us</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Pricing plans</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Our blog</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Contacts</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Support</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Help center</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Ask a question</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Privacy policy</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Terms & conditions</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Neighborhoods in New York</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Manhattan</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Central New York City</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Upper East Side</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Queens</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Theater District</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Midtown</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">SoHo</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Chelsea</a>
-          </li>
-
-        </ul>
-
-      </div>
-
-      <div class="footer-bottom">
-
-        <ul class="social-list">
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-skype"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="mail-outline"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-        <p class="copyright">
-          &copy; 2022 <a href="#">codewithsadee</a>. All Rights Reserved
-        </p>
-
-      </div>
-
-    </div>
-  </footer>
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
-</html>
+{% include 'pages/footer.html' %}
