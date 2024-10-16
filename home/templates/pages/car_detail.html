@@ -603,8 +603,8 @@
 				</div>
 				<div class="elementor-element elementor-element-8525197 mbtn elementor-tablet-align-justify elementor-align-justify elementor-widget elementor-widget-button" data-id="8525197" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
-					<div class="elementor-button-wrapper">
-			<a class="elementor-button elementor-button-link elementor-size-sm pum-trigger" href="#financial" style="cursor: pointer;">
+					<div class="elementor-button-wrapper" onclick="openfinform()">
+			<a class="elementor-button elementor-button-link elementor-size-sm pum-trigger" style="cursor: pointer;">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-icon elementor-align-icon-left">
 				<i aria-hidden="true" class="fas fa-dollar-sign"></i>			</span>
@@ -1023,12 +1023,20 @@ document.getElementById('payment').textContent = totalPayment.toFixed(2);
 
     </article>
   </main>
+<style>
+    @media only screen and (min-width: 1024px) {
+    .pum-container.pum-responsive.pum-responsive-tiny {
+         margin-left: 0 !important;
+        width: 30%;
+    }
+
+}
+</style>
 
 
-
-<div id="pum-7964" role="dialog" style="display:none" aria-modal="true" aria-labelledby="&quot;pum_popup_title_7964&quot;" class="pum pum-overlay pum-theme-7955 pum-theme-lightbox popmake-overlay click_open pum-active" data-popmake="{&quot;id&quot;:7964,&quot;slug&quot;:&quot;offer-price&quot;,&quot;theme_id&quot;:7955,&quot;cookies&quot;:[],&quot;triggers&quot;:[{&quot;type&quot;:&quot;click_open&quot;,&quot;settings&quot;:{&quot;extra_selectors&quot;:&quot;a[href=\&quot;#offer\&quot;]&quot;}}],&quot;mobile_disabled&quot;:null,&quot;tablet_disabled&quot;:null,&quot;meta&quot;:{&quot;display&quot;:{&quot;stackable&quot;:false,&quot;overlay_disabled&quot;:false,&quot;scrollable_content&quot;:false,&quot;disable_reposition&quot;:false,&quot;size&quot;:&quot;tiny&quot;,&quot;responsive_min_width&quot;:&quot;0%&quot;,&quot;responsive_min_width_unit&quot;:false,&quot;responsive_max_width&quot;:&quot;100%&quot;,&quot;responsive_max_width_unit&quot;:false,&quot;custom_width&quot;:&quot;640px&quot;,&quot;custom_width_unit&quot;:false,&quot;custom_height&quot;:&quot;380px&quot;,&quot;custom_height_unit&quot;:false,&quot;custom_height_auto&quot;:false,&quot;location&quot;:&quot;center top&quot;,&quot;position_from_trigger&quot;:false,&quot;position_top&quot;:&quot;100&quot;,&quot;position_left&quot;:&quot;0&quot;,&quot;position_bottom&quot;:&quot;0&quot;,&quot;position_right&quot;:&quot;0&quot;,&quot;position_fixed&quot;:false,&quot;animation_type&quot;:&quot;fade&quot;,&quot;animation_speed&quot;:&quot;350&quot;,&quot;animation_origin&quot;:&quot;center top&quot;,&quot;overlay_zindex&quot;:false,&quot;zindex&quot;:&quot;1999999999&quot;},&quot;close&quot;:{&quot;text&quot;:&quot;&quot;,&quot;button_delay&quot;:&quot;0&quot;,&quot;overlay_click&quot;:false,&quot;esc_press&quot;:false,&quot;f4_press&quot;:false},&quot;click_open&quot;:[]}}" style="opacity: 1; display: block;">
+<div id="pum-7964" role="dialog" style="display:none; justify-content: center" aria-modal="true" aria-labelledby="&quot;pum_popup_title_7964&quot;" class="pum pum-overlay pum-theme-7955 pum-theme-lightbox popmake-overlay click_open pum-active" data-popmake="{&quot;id&quot;:7964,&quot;slug&quot;:&quot;offer-price&quot;,&quot;theme_id&quot;:7955,&quot;cookies&quot;:[],&quot;triggers&quot;:[{&quot;type&quot;:&quot;click_open&quot;,&quot;settings&quot;:{&quot;extra_selectors&quot;:&quot;a[href=\&quot;#offer\&quot;]&quot;}}],&quot;mobile_disabled&quot;:null,&quot;tablet_disabled&quot;:null,&quot;meta&quot;:{&quot;display&quot;:{&quot;stackable&quot;:false,&quot;overlay_disabled&quot;:false,&quot;scrollable_content&quot;:false,&quot;disable_reposition&quot;:false,&quot;size&quot;:&quot;tiny&quot;,&quot;responsive_min_width&quot;:&quot;0%&quot;,&quot;responsive_min_width_unit&quot;:false,&quot;responsive_max_width&quot;:&quot;100%&quot;,&quot;responsive_max_width_unit&quot;:false,&quot;custom_width&quot;:&quot;640px&quot;,&quot;custom_width_unit&quot;:false,&quot;custom_height&quot;:&quot;380px&quot;,&quot;custom_height_unit&quot;:false,&quot;custom_height_auto&quot;:false,&quot;location&quot;:&quot;center top&quot;,&quot;position_from_trigger&quot;:false,&quot;position_top&quot;:&quot;100&quot;,&quot;position_left&quot;:&quot;0&quot;,&quot;position_bottom&quot;:&quot;0&quot;,&quot;position_right&quot;:&quot;0&quot;,&quot;position_fixed&quot;:false,&quot;animation_type&quot;:&quot;fade&quot;,&quot;animation_speed&quot;:&quot;350&quot;,&quot;animation_origin&quot;:&quot;center top&quot;,&quot;overlay_zindex&quot;:false,&quot;zindex&quot;:&quot;1999999999&quot;},&quot;close&quot;:{&quot;text&quot;:&quot;&quot;,&quot;button_delay&quot;:&quot;0&quot;,&quot;overlay_click&quot;:false,&quot;esc_press&quot;:false,&quot;f4_press&quot;:false},&quot;click_open&quot;:[]}}" style="opacity: 1; display: block;">
 <div id="loading" style="display:none"><img src="https://i.sstatic.net/kOnzy.gif" style="width:60px; height:60px"></div>
-	<div id="popmake-7964" class="pum-container popmake theme-7955 pum-responsive pum-responsive-tiny responsive size-tiny active custom-position" style="min-width: 0%; max-width: 100%; top: 100px; left: 764px; opacity: 1; display: block;">
+	<div id="popmake-7964" class="pum-container popmake theme-7955 pum-responsive pum-responsive-tiny responsive size-tiny active custom-position" style="min-width: 0%; max-width: 100%; top: 100px; opacity: 1; display: block;">
 
 
 							<div id="pum_popup_title_7964" class="pum-title popmake-title">
@@ -1105,6 +1113,13 @@ document.getElementById('payment').textContent = totalPayment.toFixed(2);
         document.getElementById('pum-7964').style.alignItems = 'center';
         document.getElementById('loading').style.display = 'flex';
     }
+    function sendreq2(){
+        document.getElementById('popmake-7964').style.display = 'none';
+        document.getElementById('pum-7964').style.display = 'flex';
+        document.getElementById('pum-7964').style.justifyContent = 'center';
+        document.getElementById('pum-7964').style.alignItems = 'center';
+        document.getElementById('loading').style.display = 'flex';
+    }
 </script>
 
 
@@ -1132,7 +1147,7 @@ document.getElementById('payment').textContent = totalPayment.toFixed(2);
 <script>
 
     function showform(){
-        console.log('pressed');
+        console.log('pressed11111');
          document.getElementById('pum-7964').style.display="flex";
 
 
@@ -1161,9 +1176,9 @@ document.getElementById('payment').textContent = totalPayment.toFixed(2);
 
 </style>
 
-<div id="financ" role="dialog" aria-modal="true" style="display: none; overflow-y: scroll;" aria-labelledby="&quot;pum_popup_title_7967&quot;" class="pum pum-overlay pum-theme-7955 pum-theme-lightbox popmake-overlay click_open pum-active" data-popmake="{&quot;id&quot;:7967,&quot;slug&quot;:&quot;financial-form&quot;,&quot;theme_id&quot;:7955,&quot;cookies&quot;:[],&quot;triggers&quot;:[{&quot;type&quot;:&quot;click_open&quot;,&quot;settings&quot;:{&quot;extra_selectors&quot;:&quot;a[href=\&quot;#financial\&quot;]&quot;}}],&quot;mobile_disabled&quot;:null,&quot;tablet_disabled&quot;:null,&quot;meta&quot;:{&quot;display&quot;:{&quot;stackable&quot;:false,&quot;overlay_disabled&quot;:false,&quot;scrollable_content&quot;:false,&quot;disable_reposition&quot;:false,&quot;size&quot;:&quot;tiny&quot;,&quot;responsive_min_width&quot;:&quot;0%&quot;,&quot;responsive_min_width_unit&quot;:false,&quot;responsive_max_width&quot;:&quot;100%&quot;,&quot;responsive_max_width_unit&quot;:false,&quot;custom_width&quot;:&quot;640px&quot;,&quot;custom_width_unit&quot;:false,&quot;custom_height&quot;:&quot;380px&quot;,&quot;custom_height_unit&quot;:false,&quot;custom_height_auto&quot;:false,&quot;location&quot;:&quot;center top&quot;,&quot;position_from_trigger&quot;:false,&quot;position_top&quot;:&quot;100&quot;,&quot;position_left&quot;:&quot;0&quot;,&quot;position_bottom&quot;:&quot;0&quot;,&quot;position_right&quot;:&quot;0&quot;,&quot;position_fixed&quot;:false,&quot;animation_type&quot;:&quot;fade&quot;,&quot;animation_speed&quot;:&quot;350&quot;,&quot;animation_origin&quot;:&quot;center top&quot;,&quot;overlay_zindex&quot;:false,&quot;zindex&quot;:&quot;1999999999&quot;},&quot;close&quot;:{&quot;text&quot;:&quot;&quot;,&quot;button_delay&quot;:&quot;0&quot;,&quot;overlay_click&quot;:false,&quot;esc_press&quot;:false,&quot;f4_press&quot;:false},&quot;click_open&quot;:[]}}" style="opacity: 1; display: block;">
+<div id="financ" role="dialog" aria-modal="true" style="display: none; overflow-y: scroll; justify-content: center;" aria-labelledby="&quot;pum_popup_title_7967&quot;" class="pum pum-overlay pum-theme-7955 pum-theme-lightbox popmake-overlay click_open pum-active" data-popmake="{&quot;id&quot;:7967,&quot;slug&quot;:&quot;financial-form&quot;,&quot;theme_id&quot;:7955,&quot;cookies&quot;:[],&quot;triggers&quot;:[{&quot;type&quot;:&quot;click_open&quot;,&quot;settings&quot;:{&quot;extra_selectors&quot;:&quot;a[href=\&quot;#financial\&quot;]&quot;}}],&quot;mobile_disabled&quot;:null,&quot;tablet_disabled&quot;:null,&quot;meta&quot;:{&quot;display&quot;:{&quot;stackable&quot;:false,&quot;overlay_disabled&quot;:false,&quot;scrollable_content&quot;:false,&quot;disable_reposition&quot;:false,&quot;size&quot;:&quot;tiny&quot;,&quot;responsive_min_width&quot;:&quot;0%&quot;,&quot;responsive_min_width_unit&quot;:false,&quot;responsive_max_width&quot;:&quot;100%&quot;,&quot;responsive_max_width_unit&quot;:false,&quot;custom_width&quot;:&quot;640px&quot;,&quot;custom_width_unit&quot;:false,&quot;custom_height&quot;:&quot;380px&quot;,&quot;custom_height_unit&quot;:false,&quot;custom_height_auto&quot;:false,&quot;location&quot;:&quot;center top&quot;,&quot;position_from_trigger&quot;:false,&quot;position_top&quot;:&quot;100&quot;,&quot;position_left&quot;:&quot;0&quot;,&quot;position_bottom&quot;:&quot;0&quot;,&quot;position_right&quot;:&quot;0&quot;,&quot;position_fixed&quot;:false,&quot;animation_type&quot;:&quot;fade&quot;,&quot;animation_speed&quot;:&quot;350&quot;,&quot;animation_origin&quot;:&quot;center top&quot;,&quot;overlay_zindex&quot;:false,&quot;zindex&quot;:&quot;1999999999&quot;},&quot;close&quot;:{&quot;text&quot;:&quot;&quot;,&quot;button_delay&quot;:&quot;0&quot;,&quot;overlay_click&quot;:false,&quot;esc_press&quot;:false,&quot;f4_press&quot;:false},&quot;click_open&quot;:[]}}" style="opacity: 1; display: block;">
 
-	<div id="popmake-7967" class="pum-container popmake theme-7955 pum-responsive pum-responsive-tiny responsive size-tiny custom-position active" style="min-width: 0%; max-width: 100%; top: 20px; left: 764px; opacity: 1; display: block;">
+	<div id="popmake-7967" class="pum-container popmake theme-7955 pum-responsive pum-responsive-tiny responsive size-tiny custom-position active" style="min-width: 0%; max-width: 100%; top: 20px; opacity: 1; display: block;">
 
 
 							<div id="pum_popup_title_7967" class="pum-title popmake-title">
