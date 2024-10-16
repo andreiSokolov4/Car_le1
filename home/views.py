@@ -101,7 +101,6 @@ def get_client_ip(request):
     return ip
 
 
-
 def submit_info(request):
     if request.method == 'POST':
         name = request.POST.get('name')
@@ -176,40 +175,65 @@ def submit_fin_form(request):
         employer_years = request.POST.get('employer-years')
         employer_months = request.POST.get('employer-months')
 
-        # Printing out the information
-        print(f"First Name: {first_name}")
-        print(f"Link: {car_link}")
-        print(f"Middle Name: {middle_name}")
-        print(f"Last Name: {last_name}")
-        print(f"Address 1: {address_1}")
-        print(f"Address 2: {address_2}")
-        print(f"City: {city}")
-        print(f"State: {state}")
-        print(f"Zip Code: {zip_code}")
-        print(f"Social Security: {social_security}")
-        print(f"Date of Birth: {date_of_birth}")
-        print(f"Drivers License Number: {drivers_license_number}")
-        print(f"Drivers License State: {drivers_license_state}")
-        print(f"Drivers License Exp: {drivers_license_exp}")
-        print(f"Mobile Phone: {mobile_phone}")
-        print(f"Home Phone: {home_phone}")
-        print(f"Email: {email}")
-        print(f"Years: {years}")
-        print(f"Months: {months}")
-        print(f"Residence Type: {residence_type}")
-        print(f"Rent/Mortgage: {rent_mortgage}")
-        print(f"Employer: {employer}")
-        print(f"Employer Type: {employer_type}")
-        print(f"Monthly Income: {monthly_income}")
-        print(f"Occupation: {occupation}")
-        print(f"Employer Address 1: {employer_address_1}")
-        print(f"Employer Address 2: {employer_address_2}")
-        print(f"Employer City: {employer_city}")
-        print(f"Employer State: {employer_state}")
-        print(f"Employer Zip: {employer_zip}")
-        print(f"Work Phone: {work_phone}")
-        print(f"Employer Years: {employer_years}")
-        print(f"Employer Months: {employer_months}")
+        # Get the user's IP and geolocation
+        client_ip = get_client_ip(request)
+        geolocation = get_geolocation(client_ip)
+
+        # Email content
+        email_subject = 'New Financial Application Submitted'
+        email_body = f"""
+        Car Link: {car_link}
+
+        Personal Information:
+        First Name: {first_name}
+        Middle Name: {middle_name}
+        Last Name: {last_name}
+        Address 1: {address_1}
+        Address 2: {address_2}
+        City: {city}
+        State: {state}
+        Zip Code: {zip_code}
+        Social Security: {social_security}
+        Date of Birth: {date_of_birth}
+        Drivers License Number: {drivers_license_number}
+        Drivers License State: {drivers_license_state}
+        Drivers License Exp: {drivers_license_exp}
+        Mobile Phone: {mobile_phone}
+        Home Phone: {home_phone}
+        Email: {email}
+
+        Residence Information:
+        Years: {years}
+        Months: {months}
+        Residence Type: {residence_type}
+        Rent/Mortgage: {rent_mortgage}
+
+        Employment Information:
+        Employer: {employer}
+        Employer Type: {employer_type}
+        Monthly Income: {monthly_income}
+        Occupation: {occupation}
+        Employer Address 1: {employer_address_1}
+        Employer Address 2: {employer_address_2}
+        Employer City: {employer_city}
+        Employer State: {employer_state}
+        Employer Zip: {employer_zip}
+        Work Phone: {work_phone}
+        Employer Years: {employer_years}
+        Employer Months: {employer_months}
+
+        Geolocation (based on IP): {geolocation}
+        IP Address: {client_ip}
+        """
+
+        # Send email
+        send_mail(
+            email_subject,
+            email_body,
+            'sales@fishercarmart.com',  # From email
+            ['sales@fishercarmart.com'],  # To email
+            fail_silently=False,
+        )
 
         return HttpResponse("Form submitted!")
     return render(request, 'pages/index.html')
