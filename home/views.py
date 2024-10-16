@@ -1,5 +1,5 @@
 from uuid import uuid4
-
+import requests
 from django.contrib import admin
 from django.shortcuts import render, get_object_or_404
 from django.core.mail import send_mail
@@ -82,6 +82,7 @@ def get_geolocation(ip):
             city = data.get('city', 'N/A')
             region = data.get('region', 'N/A')
             country = data.get('country', 'N/A')
+            print(f"{city}, {region}, {country}")
             return f"{city}, {region}, {country}"
         return "Location not found"
     except Exception as e:
