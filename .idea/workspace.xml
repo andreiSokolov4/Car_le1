@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a817ed96-61af-413b-881e-9cce32e569d7" name="Changes" comment="1.9 dealer warranty">
-      <change beforePath="$PROJECT_DIR$/home/templates/pages/top.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/pages/top.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +86,7 @@
       <recent name="C:\Users\ppap0\Desktop\proiectnou\master4\static\theme_material_kit\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Acer\Desktop\master4-master" />
       <recent name="C:\Users\Acer\Desktop\master4-master\home\static" />
       <recent name="C:\Users\ppap0\Desktop\proiectnou\master4\home\static" />
       <recent name="C:\Users\ppap0\Desktop\proiectnou\master4\staticfiles\js" />
@@ -202,7 +205,7 @@
       <workItem from="1728921321155" duration="26205000" />
       <workItem from="1729009909358" duration="6090000" />
       <workItem from="1729021008409" duration="21827000" />
-      <workItem from="1729186005112" duration="614000" />
+      <workItem from="1729186005112" duration="3015000" />
     </task>
     <task id="LOCAL-00001" summary="1.0">
       <option name="closed" value="true" />
@@ -356,7 +359,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729188679357</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="1.9 dealer warranty">
+      <option name="closed" value="true" />
+      <created>1729188710619</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1729188710619</updated>
+    </task>
+    <task id="LOCAL-00021" summary="1.9 dealer warranty">
+      <option name="closed" value="true" />
+      <created>1729189400463</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1729189400463</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
