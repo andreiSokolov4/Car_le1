@@ -635,7 +635,7 @@
 								</div>
 			<div class="value">
 				<span class="content-value">
-					<a class="listing-tax" href="https://udrautosalestx.com/listing-type/sedan/">Sedan</a>				</span>
+					<a class="listing-tax" href="https://udrautosalestx.com/listing-type/sedan/">{{ car.body }}</a>				</span>
 							</div>
 		</li>
 				<li class="meta-overview d-flex align-items-center">
@@ -645,7 +645,7 @@
 								</div>
 			<div class="value">
 				<span class="content-value">
-					50000				</span>
+					{{ car.miles }}				</span>
 							</div>
 		</li>
 				<li class="meta-overview d-flex align-items-center">
@@ -655,7 +655,7 @@
 								</div>
 			<div class="value">
 				<span class="content-value">
-					<a class="listing-tax" href="https://udrautosalestx.com/listing-fuel-type/gasoline/">Gasoline</a>				</span>
+					<a class="listing-tax" href="https://udrautosalestx.com/listing-fuel-type/gasoline/">{{ car.fuel_type }}</a>				</span>
 							</div>
 		</li>
 				<li class="meta-overview d-flex align-items-center">
@@ -665,7 +665,7 @@
 								</div>
 			<div class="value">
 				<span class="content-value">
-					2021				</span>
+					{{ car.year }}				</span>
 							</div>
 		</li>
 				<li class="meta-overview d-flex align-items-center">
@@ -675,7 +675,7 @@
 								</div>
 			<div class="value">
 				<span class="content-value">
-					<a class="listing-tax" href="https://udrautosalestx.com/listing-transmission/automatic/">Automatic</a>				</span>
+					<a class="listing-tax" href="https://udrautosalestx.com/listing-transmission/automatic/">{{ car.transmission }}</a>				</span>
 							</div>
 		</li>
 				<li class="meta-overview d-flex align-items-center">
@@ -685,7 +685,7 @@
 								</div>
 			<div class="value">
 				<span class="content-value">
-					<a class="listing-tax" href="https://udrautosalestx.com/listing-drive-type/rear-wheel-drive/">Rear-Wheel Drive</a>				</span>
+					<a class="listing-tax" href="https://udrautosalestx.com/listing-drive-type/rear-wheel-drive/">{{ car.drive_type }}</a>				</span>
 							</div>
 		</li>
 						</ul>
@@ -717,7 +717,7 @@
 								</div>
 			<div class="value">
 				<span class="content-value">
-					2.0				</span>
+					{{ car.engine_size }}				</span>
 							</div>
 		</li>
 				<li class="meta-overview d-flex align-items-center">
@@ -727,7 +727,7 @@
 								</div>
 			<div class="value">
 				<span class="content-value">
-					<a class="listing-tax" href="https://udrautosalestx.com/listing-door/4-doors/">4 Doors</a>				</span>
+					<a class="listing-tax" href="https://udrautosalestx.com/listing-door/4-doors/">{{ car.doors }}</a>				</span>
 							</div>
 		</li>
 				<li class="meta-overview d-flex align-items-center">
@@ -737,7 +737,7 @@
 								</div>
 			<div class="value">
 				<span class="content-value">
-					<a class="listing-tax" href="https://udrautosalestx.com/listing-cylinder/4/">4</a>				</span>
+					<a class="listing-tax" href="https://udrautosalestx.com/listing-cylinder/4/">{{ car.cylinders }}</a>				</span>
 							</div>
 		</li>
 				<li class="meta-overview d-flex align-items-center">
@@ -747,19 +747,10 @@
 								</div>
 			<div class="value">
 				<span class="content-value">
-					<a class="listing-tax" href="https://udrautosalestx.com/listing-color/red/">Red</a>				</span>
+					<a class="listing-tax" href="https://udrautosalestx.com/listing-color/red/">{{ car.color }}</a>				</span>
 							</div>
 		</li>
-				<li class="meta-overview d-flex align-items-center">
-			<div class="text">
-				<i aria-hidden="true" class=" flaticon-report"></i>									<span class="field-title">
-						VIN					</span>
-								</div>
-			<div class="value">
-				<span class="content-value">
-									</span>
-							</div>
-		</li>
+
 						</ul>
 			</div>
 					</div>
