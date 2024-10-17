@@ -16,9 +16,9 @@
 <h1>Listings</h1>
     <!-- Filter Form -->
     <div style="margin-bottom: 20px;">
-        <div class="hero-form">
+       <form action="{% url 'listings' %}" method="GET" class="hero-form">
             <div class="input-wrapper">
-              <label for="make" class="input-label">Make</label>
+                <label for="make" class="input-label">Make</label>
                 <select name="make" id="make" class="input-field">
                     <option value="">Any</option>
                     <option value="Toyota">Toyota</option>
@@ -28,18 +28,14 @@
                 </select>
             </div>
 
-
-
-
-
             <!-- New Dropdown Filters -->
             <div class="input-wrapper">
-                <label for="make" class="input-label">Mileage</label>
-                <select name="make" id="make" class="input-field">
-                    <option value="">Any</option>
-                    <option value="Toyota">Toyota</option>
-                    <option value="Honda">Honda</option>
-                    <option value="Ford">Ford</option>
+                <label for="mileage" class="input-label">Mileage</label>
+                <select name="mileage" id="mileage" class="input-field">
+                    <option value="">0 - 10 000</option>
+                    <option value="10-30k">10 000 - 30 000</option>
+                    <option value="30-50k">30 000 - 50 000</option>
+                    <option value="50k+">50 000+</option>
                     <!-- Add more options as needed -->
                 </select>
             </div>
@@ -50,7 +46,7 @@
                     <option value="">Any</option>
                     <option value="Sedan">Sedan</option>
                     <option value="SUV">SUV</option>
-                    <option value="Truck">Truck</option>
+                    <option value="Truck">Pickup</option>
                     <!-- Add more options as needed -->
                 </select>
             </div>
@@ -64,11 +60,21 @@
                 </select>
             </div>
 
-
-        </div>
+            <div>
+                <button type="submit" style="padding: 5px 10px;">Filter</button>
+            </div>
+        </form>
     </div>
 </div>
-
+<style>
+    @media (min-width: 1024px) {
+    .featured-car-list {
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-top: 20px;
+    }
+}
+</style>
 
     {% if cars.exists %}
           <ul class="featured-car-list">
