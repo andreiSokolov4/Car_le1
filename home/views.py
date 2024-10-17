@@ -45,7 +45,7 @@ def shipping(request):
     return render(request, 'pages/shipping.html')
 
 def dealer_warranty(request):
-    return render(request, 'pages/dealer_warranty.html')
+    return render(request, 'pages/Dealer_warranty.html')
 
 def contact_us(request):
     return render(request, 'pages/contact_us.html')
