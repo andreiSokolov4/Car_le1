@@ -22,7 +22,7 @@ class Car(models.Model):
     vin = models.CharField(max_length=100, default='Unknown')
 
     def __str__(self):
-        return f"{self.mark} {self.model}"
+        return f"{self.mark} {self.model} {self.miles} {self.body}"
 
     class Meta:
         verbose_name_plural = "Cars"

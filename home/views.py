@@ -56,21 +56,40 @@ def car_detail(request, pk):
     photos = car.photos.all()
     return render(request, 'pages/car_detail.html', {'car': car, 'photos': photos})
 
+
 def listings(request):
-    cars = Car.objects.all()
+    cars = Car.objects.all()  # Start with all cars
 
-    # Get filter criteria from request
+    # Collect filter parameters from GET request
     mark = request.GET.get('mark')
-    model = request.GET.get('model')
-    year = request.GET.get('year')
+    miles = request.GET.get('miles')
+    body = request.GET.get('body')
+    sort_by = request.GET.get('sort_by')
 
-    # Apply filters if they exist
+    # Apply filters based on the selected values
     if mark:
-        cars = cars.filter(mark__icontains=mark)
-    if model:
-        cars = cars.filter(model__icontains=model)
-    if year:
-        cars = cars.filter(year=year)
+        cars = cars.filter(mark=mark)
+
+    if miles:
+        # Filter based on mileage ranges
+        if miles == "10-30k":
+            cars = cars.filter(miles__gte=10000, miles__lt=30000)
+        elif miles == "30-50k":
+            cars = cars.filter(miles__gte=30000, miles__lt=50000)
+        elif miles == "50k+":
+            cars = cars.filter(miles__gte=50000)
+
+    if body:
+        cars = cars.filter(body=body)
+
+    # Sorting the results
+    if sort_by:
+        if sort_by == 'price':
+            cars = cars.order_by('price')  # Adjust according to your price field type
+        elif sort_by == 'year':
+            cars = cars.order_by('-year')
+        elif sort_by == 'miles':
+            cars = cars.order_by('miles')
 
     return render(request, 'pages/listings.html', {'cars': cars})
 

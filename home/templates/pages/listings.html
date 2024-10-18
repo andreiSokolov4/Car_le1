@@ -2,21 +2,544 @@
  {% include 'pages/top.html' %}
 
 
+ <style>
+        /* General button styling */
+        .comfy-button {
+            display: none;
+            background-color: #4B9CD3; /* Carolina Blue */
+            border: none;
+            border-radius: 12px;
+            color: white;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
 
-    <!-- Your listings content goes here -->
-<div style="margin-top: 6%;">
-<div style="
-    display: flex;
+        .comfy-button svg {
+            width: 16px;
+            height: 16px;
+            fill: white;
+        }
+
+        .comfy-button:hover {
+            background-color: #2C7ABF;
+            transform: scale(1.05);
+        }
+
+        /* Overlay styling */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Black with transparency */
+            display: none; /* Hidden initially */
+            z-index: 1000; /* Above other elements */
+        }
+
+        /* Filter window styling */
+        .filter-window {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            max-width: 400px;
+            height: 100%;
+            background-color: #f4f4f4;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            overflow-y: auto;
+            transform: translateX(100%); /* Start off-screen */
+            transition: transform 0.3s ease;
+            z-index: 1001; /* Above overlay */
+        }
+
+        .filter-window.active {
+            transform: translateX(0); /* Slide in when active */
+        }
+
+        /* Close button styling */
+        .close-btn {
+            background-color: transparent;
+            border: none;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .close-btn:hover {
+            color: #4B9CD3; /* Carolina Blue on hover */
+        }
+
+        /* Filter form elements */
+        .input-wrapper {
+            margin-bottom: 15px;
+        }
+
+        .input-label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        /* Enhanced filter button styling */
+        .submit-btn {
+            background-color: #4B9CD3; /* Carolina Blue */
+            border: none;
+            padding: 10px 15px;
+            color: white;
+            font-size: 14px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #2C7ABF;
+            transform: scale(1.05);
+        }
+
+        /* Mobile-friendly adjustments */
+        @media (max-width: 768px) {
+            .filter-window {
+                width: 100%;
+                max-width: none;
+                height: auto;
+            }
+            .comfy-button {
+                display: flex;
+            }
+             .custom1{
+            display: flex;
+    margin-top: 20%;
     justify-content: space-between;
     padding-left: 2%;
     padding-right: 2%;
     padding-bottom: 2%;
     align-items: center;
-">
+        }
+
+        }
+        .custom1{
+            display: flex;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    align-items: center;
+        }
+        @media (min-width: 1024px) {
+    .comfy-button {
+        display: none;
+    }
+}
+
+    </style>
+    <!-- Your listings content goes here -->
+<div style="margin-top: 6%;">
+<div class="custom1">
 <h1>Listings</h1>
+ <div>
+          <button class="comfy-button" id="filter-btn">
+        <!-- SVG filter icon (smaller and white) -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M10 18h4v-2h-4v2zm-7-8v2h18v-2h-18zm3-6v2h12v-2h-12z"/>
+        </svg>
+        Filters
+    </button>
+
+    <!-- Filter window -->
+   <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Filter window -->
+   <div class="filter-window" id="filter-window" style="height: 100%">
+        <!-- Close button -->
+        <button class="close-btn" id="close-filter-btn">&times;</button>
+
+        <!-- Filter form -->
+        <div style="margin-bottom: 20px; margin-top: 20%;">
+            <form action="{% url 'listings' %}" method="GET" class="hero-form">
+                <div class="input-wrapper">
+                    <label for="mark" class="input-label">Make</label>
+                    <select name="mark" id="mark" class="input-field">
+                        <option value="">Any</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Honda">Honda</option>
+                        <option value="Ford">Ford</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="miles" class="input-label">Mileage</label>
+                    <select name="miles" id="miles" class="input-field">
+                        <option value="">0 - 10 000</option>
+                        <option value="10-30k">10 000 - 30 000</option>
+                        <option value="30-50k">30 000 - 50 000</option>
+                        <option value="50k+">50 000+</option>
+                    </select>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="body" class="input-label">Body Type</label>
+                    <select name="body" id="body" class="input-field">
+                        <option value="">Any</option>
+                        <option value="Sedan">Sedan</option>
+                        <option value="SUV">SUV</option>
+                        <option value="Truck">Pickup</option>
+                    </select>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="sort_by" class="input-label">Sort</label>
+                    <select id="sort_by" name="sort_by" class="input-field">
+                        <option value="price">Price</option>
+                        <option value="year">Year</option>
+                        <option value="miles">Miles</option>
+                    </select>
+                </div>
+
+                <div>
+                    <button type="submit" class="submit-btn">Filter</button>
+                </div>
+            </form>
+        </div>
+    </div>
+<script>
+        // JavaScript to conditionally hide comfy-button on PCs only
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.innerWidth >= 1024) {
+                document.querySelector('.comfy-button').style.display = 'none';
+            }
+        });
+    </script>
+
+      <script>
+        // Get elements
+        const filterBtn = document.getElementById('filter-btn');
+        const filterWindow = document.getElementById('filter-window');
+        const overlay = document.getElementById('overlay');
+        const closeFilterBtn = document.getElementById('close-filter-btn');
+        const filterForm = document.getElementById('filter-form');
+
+        // Toggle filter window visibility
+        filterBtn.addEventListener('click', () => {
+            filterWindow.classList.toggle('active');
+            overlay.style.display = 'block'; // Show overlay
+        });
+
+        // Close the filter window when close button is clicked
+        closeFilterBtn.addEventListener('click', () => {
+            filterWindow.classList.remove('active');
+            overlay.style.display = 'none'; // Hide overlay
+        });
+
+        // Close the filter window when clicking on the overlay
+        overlay.addEventListener('click', () => {
+            filterWindow.classList.remove('active');
+            overlay.style.display = 'none'; // Hide overlay
+        });
+
+        // Handle filter form submission
+        filterForm.addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Collect selected filter values
+            const make = document.getElementById('mark').value;
+            const mileage = document.getElementById('miles').value;
+            const bodyType = document.getElementById('body').value;
+            const sortBy = document.getElementById('sort_by').value;
+
+            // Build the query parameters
+            const params = new URLSearchParams();
+
+            if (make) params.append('mark', make);
+            if (mileage) params.append('miles', mileage);
+            if (bodyType) params.append('body', bodyType);
+            if (sortBy) params.append('sort_by', sortBy);
+
+            // Redirect to the constructed URL
+            window.location.href = `http://127.0.0.1:8000/listings/?${params.toString()}`;
+        });
+    </script>
+
+    </div>
+
+
+
     <!-- Filter Form -->
-    <div style="margin-bottom: 20px;">
-       <form action="{% url 'listings' %}" method="GET" class="hero-form">
+
+     <style>
+        /* General button styling */
+        .comfy-button {
+            background-color: #4B9CD3; /* Carolina Blue */
+            border: none;
+            border-radius: 12px;
+            color: white;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .comfy-button svg {
+            width: 16px;
+            height: 16px;
+            fill: white;
+        }
+
+        .comfy-button:hover {
+            background-color: #2C7ABF;
+            transform: scale(1.05);
+        }
+
+        /* Filter window styling */
+        .filter-window {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            max-width: 400px;
+            height: 100%;
+            background-color: #f4f4f4;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            overflow-y: auto;
+            display: none; /* Hidden initially */
+            transition: transform 0.3s ease;
+        }
+
+        .filter-window.active {
+            display: block; /* Show when active */
+        }
+
+        /* Close button styling */
+        .close-btn {
+            background-color: transparent;
+            border: none;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .close-btn:hover {
+            color: #4B9CD3; /* Carolina Blue on hover */
+        }
+
+        /* Filter form elements */
+        .input-wrapper {
+            margin-bottom: 15px;
+        }
+
+        .input-label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        /* Enhanced filter button styling */
+        .submit-btn {
+            background-color: #4B9CD3; /* Carolina Blue */
+            border: none;
+            padding: 10px 15px;
+            color: white;
+            font-size: 14px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #2C7ABF;
+            transform: scale(1.05);
+        }
+
+        /* Mobile-friendly adjustments */
+        @media (max-width: 768px) {
+            .filter-window {
+                width: 100%;
+                max-width: none;
+                height: auto;
+            }
+        }
+    </style>
+    <style>
+    /* General styles for all screens */
+    .hero-section {
+        background-color: transparent;
+        border-radius: 10px;
+
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .form-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .input-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-label {
+        font-size: 1.1em;
+        font-weight: 500;
+        margin-bottom: 8px;
+        color: #333;
+    }
+
+    .input-field {
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        background-color: #fff;
+        font-size: 1em;
+        transition: border-color 0.3s ease;
+    }
+
+    .input-field:focus {
+        border-color: #007BFF;
+        outline: none;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .filter-button {
+        background-color: #007BFF;
+        color: #fff;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 6px;
+        font-size: 1.2em;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: 100%;
+    }
+
+    .filter-button:hover {
+        background-color: #0056b3;
+    }
+
+    /* Hide form and add "Filters" button for mobile */
+    #filter-form {
+        display: none;
+    }
+
+    .filter-button-mobile {
+        display: block;
+        background-color: #007BFF;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 6px;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .filter-button-mobile:hover {
+        background-color: #0056b3;
+    }
+
+    /* Styles for screens larger than 768px */
+    @media (min-width: 768px) {
+        .filter-button-mobile {
+            display: none;
+        }
+
+
+        #filter-form {
+            display: block;
+        }
+    }
+
+    /* Modal-like style for mobile filters */
+    @media (max-width: 768px) {
+        .hid-mob{
+            display: none;
+        }
+        #filter-form {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+            display: none; /* Hidden by default */
+        }
+
+        .hero-form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+        }
+    }
+</style>
+<style>
+    @media (min-width: 1024px) {
+    .form-custom1 {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        align-items: center;
+    }
+}
+
+</style>
+
+    <div style="margin-bottom: 20px;" class="hid-mob">
+       <form action="{% url 'listings' %}" method="GET" class="hero-form form-custom1">
             <div class="input-wrapper">
                 <label for="make" class="input-label">Make</label>
                 <select name="make" id="make" class="input-field">
@@ -60,9 +583,14 @@
                 </select>
             </div>
 
-            <div>
-                <button type="submit" style="padding: 5px 10px;">Filter</button>
-            </div>
+             <button class="comfy-button" id="filter-btn" style="width: 80%">
+        <!-- SVG filter icon (smaller and white) -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M10 18h4v-2h-4v2zm-7-8v2h18v-2h-18zm3-6v2h12v-2h-12z"/>
+        </svg>
+        Filter
+    </button>
+
         </form>
     </div>
 </div>
