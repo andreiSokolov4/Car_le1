@@ -51,8 +51,9 @@ def contact_us(request):
     return render(request, 'pages/contact_us.html')
 
 
-def car_detail(request, pk):
-    car = get_object_or_404(Car, pk=pk)
+def car_detail(request, caryear, carmark, carmodel):
+    # Get the car based on the year, mark, and model
+    car = get_object_or_404(Car, year=caryear, mark=carmark, model=carmodel)
     photos = car.photos.all()
     return render(request, 'pages/car_detail.html', {'car': car, 'photos': photos})
 

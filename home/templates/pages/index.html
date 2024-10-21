@@ -358,14 +358,14 @@
                     {% for car in cars|slice:":5" %}
                     <div class="featured-car-card">
                         <figure class="card-banner">
-                            <a href="{% url 'car_detail' car.pk %}">
+                            <a href="{% url 'car_detail' caryear=car.year carmark=car.mark carmodel=car.model %}">
                                 <img src="{{ car.photo.url }}" alt="{{ car.mark }} {{ car.model }}" loading="lazy" class="w-100">
                             </a>
                         </figure>
                         <div class="card-content">
                             <div class="card-title-wrapper">
                                 <h3 class="h3 card-title" style="font-size: 16px">
-                                    <a href="{% url 'car_detail' car.pk %}">{{ car.mark }} {{ car.model }}</a>
+                                    <a href="{% url 'car_detail' caryear=car.year carmark=car.mark carmodel=car.model %}">{{ car.mark }} {{ car.model }}</a>
                                 </h3>
                                 <data class="year" value="{{ car.year }}">{{ car.year }}</data>
                             </div>
