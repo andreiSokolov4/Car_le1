@@ -9,29 +9,27 @@ from .models import Car
 
 
 def index(request):
-    # Get query parameters from the GET request
     car_model = request.GET.get('car-model')
     max_price = request.GET.get('max-price')
     min_year = request.GET.get('min-year')
 
-    # Initialize the queryset
     cars = Car.objects.all()
 
-    # Filter based on user input
     if car_model:
         cars = cars.filter(model__icontains=car_model)
-
     if max_price:
         try:
             cars = cars.filter(price__lte=float(max_price))
         except ValueError:
-            pass  # Handle the case where conversion fails
-
+            pass
     if min_year:
         try:
             cars = cars.filter(year__gte=int(min_year))
         except ValueError:
-            pass  # Handle the case where conversion fails
+            pass
+
+    for car in cars:
+        print(car.photo.url)
 
     return render(request, 'pages/index.html', {'cars': cars})
 

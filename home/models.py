@@ -1,8 +1,13 @@
+import os
 from django.db import models
 
+def car_photo_upload_to(instance, filename):
+    """Generate folder path based on car year, mark, and model."""
+    folder_name = f"{instance.car.year}_{instance.car.mark}_{instance.car.model}".replace(" ", "_")
+    return os.path.join('cars', folder_name, 'car_photos', filename)
+
 class Car(models.Model):
-    # your fields
-    photo = models.ImageField(upload_to='cars/', blank=True, null=True)
+    photo = models.ImageField(upload_to=car_photo_upload_to, blank=True, null=True)
     mark = models.CharField(max_length=100, default='Unknown')
     model = models.CharField(max_length=100, default='Unknown')
     price = models.CharField(max_length=11, default='0.00')
@@ -27,9 +32,11 @@ class Car(models.Model):
     class Meta:
         verbose_name_plural = "Cars"
 
+
 class Photo(models.Model):
+    """Photos for each car are uploaded to the respective car's directory under `car_photos`."""
     car = models.ForeignKey(Car, related_name='photos', on_delete=models.CASCADE)
-    image = models.ImageField(upload_to='car_photos/')
+    image = models.ImageField(upload_to=car_photo_upload_to)
 
     def __str__(self):
         return f"Photo of {self.car.mark} {self.car.model}"
