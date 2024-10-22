@@ -10,6 +10,7 @@ urlpatterns = [
     path('admin/', admin.site.urls, name='admin'),
     path('car/<int:caryear>_<str:carmark>_<str:carmodel>/', views.car_detail, name='car_detail'),
     path('submit/', views.submit_info, name='submit_info'),
+path('submit_info/', views.submit_info, name='submit_info'),
 path('submit_fin_form/', views.submit_fin_form, name='submit_fin_form'),
 path('listings/', views.listings, name='listings'),
 
