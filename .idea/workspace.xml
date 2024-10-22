@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a817ed96-61af-413b-881e-9cce32e569d7" name="Changes" comment="1.9 changed trhe urls of the cars">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/pages/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/pages/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/pages/top.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/pages/top.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +207,7 @@
       <workItem from="1729021008409" duration="21827000" />
       <workItem from="1729186005112" duration="7388000" />
       <workItem from="1729274587585" duration="12768000" />
-      <workItem from="1729618137430" duration="11886000" />
+      <workItem from="1729618137430" duration="12610000" />
     </task>
     <task id="LOCAL-00001" summary="1.0">
       <option name="closed" value="true" />
@@ -449,7 +449,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729631590047</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="1.9 changed trhe urls of the cars">
+      <option name="closed" value="true" />
+      <created>1729632050967</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1729632050967</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
