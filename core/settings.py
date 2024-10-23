@@ -33,12 +33,12 @@ if not SECRET_KEY:
 DEBUG = True
 
 # Docker HOST
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '*', 'fishercarmart.com',
-    'www.fishercarmart.com',]
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '*', 'aaaatuosalesNM.com',
+    'www.aaaatuosalesNM.com',]
 
 # Add here your deployment HOSTS
-CSRF_TRUSTED_ORIGINS = ['http://localhost:8000', 'http://localhost:5085',  'https://fishercarmart.com',
-    'https://www.fishercarmart.com', ]
+CSRF_TRUSTED_ORIGINS = ['http://localhost:8000', 'http://localhost:5085',  'https://aaaatuosalesNM.com',
+    'https://www.aaaatuosalesNM.com', ]
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 if RENDER_EXTERNAL_HOSTNAME:

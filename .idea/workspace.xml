@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a817ed96-61af-413b-881e-9cce32e569d7" name="Changes" comment="2.01 changed the dealership">
-      <change afterPath="$PROJECT_DIR$/home/static/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/logo.png" afterDir="false" />
+    <list default="true" id="a817ed96-61af-413b-881e-9cce32e569d7" name="Changes" comment="2.01 changed the dealership(logo)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/pages/contact_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/pages/contact_us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/pages/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/pages/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/pages/shipping.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/pages/shipping.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/pages/top.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/pages/top.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -210,7 +212,7 @@
       <workItem from="1729274587585" duration="12768000" />
       <workItem from="1729618137430" duration="16273000" />
       <workItem from="1729697189441" duration="215000" />
-      <workItem from="1729697416212" duration="1212000" />
+      <workItem from="1729697416212" duration="2230000" />
     </task>
     <task id="LOCAL-00001" summary="1.0">
       <option name="closed" value="true" />
@@ -500,7 +502,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729697871482</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="2.01 changed the dealership(logo)">
+      <option name="closed" value="true" />
+      <created>1729698654737</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1729698654737</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -524,6 +534,7 @@
     <MESSAGE value="1.9 fikter" />
     <MESSAGE value="1.9 changed trhe urls of the cars" />
     <MESSAGE value="2.01 changed the dealership" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.01 changed the dealership" />
+    <MESSAGE value="2.01 changed the dealership(logo)" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.01 changed the dealership(logo)" />
   </component>
 </project>
