@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a817ed96-61af-413b-881e-9cce32e569d7" name="Changes" comment="1.9 changed trhe urls of the cars">
+      <change afterPath="$PROJECT_DIR$/home/static/dealer.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/static/main.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/main.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/pages/top.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/pages/top.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/pages/About_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/pages/About_us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/pages/Dealer_warranty.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/pages/Dealer_warranty.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/pages/contact_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/pages/contact_us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/pages/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/pages/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/pages/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/pages/shipping.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/pages/shipping.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/dealer.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,28 +54,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "django.template.preview.state": "SHOW_EDITOR",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Acer/Desktop/master4-master/media",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Acer/Desktop/master4-master/media&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
       <console-settings module-name="2webmarket-master" is-module-sdk="true" working-directory="$PROJECT_DIR$">
@@ -85,8 +94,8 @@
       <recent name="C:\Users\Acer\Desktop\master4-master\home\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Acer\Desktop\master4-master" />
       <recent name="C:\Users\Acer\Desktop\master4-master\home\static" />
+      <recent name="C:\Users\Acer\Desktop\master4-master" />
       <recent name="C:\Users\ppap0\Desktop\proiectnou\master4\home\static" />
       <recent name="C:\Users\ppap0\Desktop\proiectnou\master4\staticfiles\js" />
     </key>
@@ -206,7 +215,8 @@
       <workItem from="1729021008409" duration="21827000" />
       <workItem from="1729186005112" duration="7388000" />
       <workItem from="1729274587585" duration="12768000" />
-      <workItem from="1729618137430" duration="12982000" />
+      <workItem from="1729618137430" duration="16273000" />
+      <workItem from="1729697189441" duration="215000" />
     </task>
     <task id="LOCAL-00001" summary="1.0">
       <option name="closed" value="true" />
@@ -464,7 +474,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729632889347</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="1.9 changed trhe urls of the cars">
+      <option name="closed" value="true" />
+      <created>1729633260661</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1729633260661</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

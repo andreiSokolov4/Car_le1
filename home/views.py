@@ -143,8 +143,8 @@ def submit_info(request):
         send_mail(
             email_subject,                # subject
             email_body,                   # message body
-            'sales@fishercarmart.com',    # from email
-            ['sales@fishercarmart.com'],  # recipient email
+            'sales@aaaautosalesnm.com',    # from email
+            ['sales@aaaautosalesnm.com'],  # recipient email
             fail_silently=False,
         )
 
@@ -248,8 +248,8 @@ def submit_fin_form(request):
         send_mail(
             email_subject,
             email_body,
-            'sales@fishercarmart.com',  # From email
-            ['sales@fishercarmart.com'],  # To email
+            'sales@aaaautosalesnm.com',  # From email
+            ['sales@aaaautosalesnm.com'],  # To email
             fail_silently=False,
         )
 
