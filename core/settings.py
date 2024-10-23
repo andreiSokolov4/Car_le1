@@ -33,12 +33,12 @@ if not SECRET_KEY:
 DEBUG = True
 
 # Docker HOST
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '*', 'aaaatuosalesNM.com',
-    'www.aaaatuosalesNM.com',]
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '*', 'aaaautosalesnm.com',
+    'www.aaaautosalesnm.com',]
 
 # Add here your deployment HOSTS
-CSRF_TRUSTED_ORIGINS = ['http://localhost:8000', 'http://localhost:5085',  'https://aaaatuosalesNM.com',
-    'https://www.aaaatuosalesNM.com', ]
+CSRF_TRUSTED_ORIGINS = ['http://localhost:8000', 'http://localhost:5085',  'https://aaaautosalesnm.com',
+    'https://www.aaaautosalesnm.com', ]
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 if RENDER_EXTERNAL_HOSTNAME:
@@ -178,7 +178,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.hostinger.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'sales@aaaautosalesNM.com'
+EMAIL_HOST_USER = 'sales@aaaautosalesnm.com'
 EMAIL_HOST_PASSWORD = '~X3aZ0>du'
 
 
