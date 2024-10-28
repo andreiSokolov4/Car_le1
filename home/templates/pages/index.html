@@ -10,17 +10,35 @@
     @media (min-width: 768px) {
         .hero-banner {
             display: block;
-            background: url({% static 'main.jpg' %}) no-repeat !important;
+            background: url({% static 'main.jpg' %}) no-repeat center center / cover !important;
             background-size: cover;
             background-position: left;
             position: absolute;
             top: 100px;
             bottom: 50px;
-            left: 65%;
-            width: 600px;
+            left: 0%;
+            width: 100%;
             border-radius: 30px;
             z-index: -1;
         }
+    }
+     @media (min-width: 1024px) {
+       .hero-content {
+           padding-bottom: 10%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+           margin-bottom: 5%;
+       }
+         .hero-title{
+             text-align: center;
+             color: white;
+         }
+         .hero-text {
+             color: white;
+         }
     }
 </style>
 
@@ -33,42 +51,44 @@
       -->
 
       <section class="section hero" id="home">
-        <div class="container">
+        <div class="container" style="height: 550px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap;">
+  <div class="hero-content">
+    <h2 class="h1 hero-title">The Easy way to get yourself in a vehicle</h2>
+    <p class="hero-text">Delivering you car to your door step</p>
+  </div>
+<div>
+  <div class="hero-banner" style="width: 100%;
+    height: 100% !important;
+    top: -40px;
+    max-height: 100% !important;
+    bottom: 200px !important;"></div>
 
-          <div class="hero-content">
-            <h2 class="h1 hero-title">The easy way to takeover a lease</h2>
-
-            <p class="hero-text">
-              Delivering Cars all over the world is easy.
-            </p>
-          </div>
-
-          <div class="hero-banner" style="
-    top: -200px;
-    bottom: -200px;
-"></div>
-
-         <form action="{% url 'listings' %}" method="GET" class="hero-form">
+  <form action="{% url 'listings' %}" method="GET" class="hero-form">
     <div class="input-wrapper">
-        <label for="input-1" class="input-label">Car Brand</label>
-        <input type="text" name="mark" id="input-1" class="input-field" placeholder="What brand are you looking for?">
+      <label for="input-1" class="input-label">Car Brand</label>
+      <input type="text" name="mark" id="input-1" class="input-field" placeholder="What brand are you looking for?">
     </div>
 
     <div class="input-wrapper">
-        <label for="input-2" class="input-label">Car Model</label>
-        <input type="text" name="model" id="input-2" class="input-field" placeholder="What model are you looking for?">
+      <label for="input-2" class="input-label">Car Model</label>
+      <input type="text" name="model" id="input-2" class="input-field" placeholder="What model are you looking for?">
     </div>
 
     <div class="input-wrapper">
-        <label for="input-3" class="input-label">Make Year</label>
-        <input type="text" name="year" id="input-3" class="input-field" placeholder="Add a minimal make year">
+      <label for="input-3" class="input-label">Make Year</label>
+      <input type="text" name="year" id="input-3" class="input-field" placeholder="Add a minimal make year">
     </div>
 
     <button type="submit" class="btn">Search</button>
-</form>
+  </form>
+</div>
+</div>
 
-
-        </div>
       </section>
 
 <style>
@@ -338,6 +358,36 @@
                 right: 5px;
             }
         }
+.card-banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-banner img {
+    display: block;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.year-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(211, 211, 211, 0.8); /* Light gray background */
+    color: #000; /* Black text */
+    padding: 5px 10px;
+    border: 2px dashed #4da3ff;
+    border-radius: 11px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card-banner:hover img {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
 
 </style>
 
@@ -355,57 +405,58 @@
             <div class="carousel-wrapper">
                 <!-- Carousel Track -->
                 <div class="carousel-track">
-                    {% for car in cars|slice:":5" %}
+                    {% for car in cars|slice:":7" %}
                     <div class="featured-car-card">
-                        <figure class="card-banner">
-                            <a href="{% url 'car_detail' caryear=car.year carmark=car.mark carmodel=car.model %}">
-                                <img src="{{ car.photo.url }}" alt="{{ car.mark }} {{ car.model }}" loading="lazy" class="w-100">
-                            </a>
-                        </figure>
-                        <div class="card-content">
-                            <div class="card-title-wrapper">
-                                <h3 class="h3 card-title" style="font-size: 16px">
-                                    <a href="{% url 'car_detail' caryear=car.year carmark=car.mark carmodel=car.model %}">{{ car.mark }} {{ car.model }}</a>
-                                </h3>
-                                <data class="year" value="{{ car.year }}">{{ car.year }}</data>
-                            </div>
-                            <ul class="card-list">
-                                <li class="card-list-item">
-                                    <ion-icon name="people-outline"></ion-icon>
-                                    <span class="card-item-text">4 People</span>
-                                </li>
-                                <li class="card-list-item">
-                                    <ion-icon name="flash-outline"></ion-icon>
-                                    <span class="card-item-text">{{ car.fuel_type }}</span>
-                                </li>
-                                <li class="card-list-item">
-                                    <ion-icon name="speedometer-outline"></ion-icon>
-                                    <span class="card-item-text">{{ car.miles }} miles</span>
-                                </li>
-                                <li class="card-list-item">
-                                    <ion-icon name="hardware-chip-outline"></ion-icon>
-                                    <span class="card-item-text">{{ car.transmission }}</span>
-                                </li>
-                                <li class="card-list-item">
-                                    <ion-icon name="cog-outline"></ion-icon>
-                                    <span class="card-item-text">{{ car.engine_size }}L Engine</span>
-                                </li>
-                                <li class="card-list-item">
-                                    <ion-icon name="color-palette-outline"></ion-icon>
-                                    <span class="card-item-text">{{ car.color }}</span>
-                                </li>
-                            </ul>
-                            <div class="card-price-wrapper">
-                                <p class="card-price">
-                                    <strong>${{ car.price }}</strong>
-                                </p>
-                                <button class="fav-btn" aria-label="Add to favourite list">
-                                    <ion-icon name="heart-outline"></ion-icon>
-                                </button>
-                                <a href="" class="btn btn-primary">View Car</a>
-                            </div>
-                        </div>
-                    </div>
+    <figure class="card-banner">
+        <a href="{% url 'car_detail' caryear=car.year carmark=car.mark carmodel=car.model %}">
+            <img src="{{ car.photo.url }}" alt="{{ car.mark }} {{ car.model }}" loading="lazy" class="w-100">
+            <data class="year-overlay" value="{{ car.year }}">{{ car.year }}</data>
+        </a>
+    </figure>
+    <div class="card-content">
+        <div class="card-title-wrapper">
+            <h3 class="h3 card-title" style="font-size: 16px">
+                <a href="{% url 'car_detail' caryear=car.year carmark=car.mark carmodel=car.model %}">{{ car.mark }} {{ car.model }}</a>
+            </h3>
+        </div>
+        <ul class="card-list">
+            <li class="card-list-item">
+                <ion-icon name="people-outline"></ion-icon>
+                <span class="card-item-text">4 People</span>
+            </li>
+            <li class="card-list-item">
+                <ion-icon name="flash-outline"></ion-icon>
+                <span class="card-item-text">{{ car.fuel_type }}</span>
+            </li>
+            <li class="card-list-item">
+                <ion-icon name="speedometer-outline"></ion-icon>
+                <span class="card-item-text">{{ car.miles }} miles</span>
+            </li>
+            <li class="card-list-item">
+                <ion-icon name="hardware-chip-outline"></ion-icon>
+                <span class="card-item-text">{{ car.transmission }}</span>
+            </li>
+            <li class="card-list-item">
+                <ion-icon name="cog-outline"></ion-icon>
+                <span class="card-item-text">{{ car.engine_size }}L Engine</span>
+            </li>
+            <li class="card-list-item">
+                <ion-icon name="color-palette-outline"></ion-icon>
+                <span class="card-item-text">{{ car.color }}</span>
+            </li>
+        </ul>
+        <div class="card-price-wrapper">
+            <p class="card-price">
+                <strong>${{ car.price }}</strong>
+            </p>
+            <button class="fav-btn" aria-label="Add to favourite list">
+                <ion-icon name="heart-outline"></ion-icon>
+            </button>
+            <a href="" class="btn btn-primary">View Car</a>
+        </div>
+    </div>
+</div>
+
                     {% endfor %}
                 </div>
 
@@ -421,7 +472,7 @@
     </section>
 
     <!-- Custom JavaScript for Carousel Functionality -->
-   <script>
+ <script>
     document.addEventListener('DOMContentLoaded', function () {
         const track = document.querySelector('.carousel-track');
         const slides = Array.from(track.children);
@@ -429,9 +480,8 @@
         const nextButton = document.querySelector('.carousel-button.next');
         let slideWidth = slides[0].getBoundingClientRect().width;
 
-        // Set the position of each slide based on its width
         const setSlidePosition = () => {
-            slideWidth = slides[0].getBoundingClientRect().width; // Update the width on resize
+            slideWidth = slides[0].getBoundingClientRect().width;
             slides.forEach((slide, index) => {
                 slide.style.left = slideWidth * index + 'px';
             });
@@ -441,54 +491,72 @@
         const moveToSlide = (currentSlide, targetSlide) => {
             const targetIndex = slides.indexOf(targetSlide);
             const amountToMove = targetIndex * slideWidth;
-            track.style.transform = 'translateX(-' + amountToMove + 'px)';
-            currentSlide.classList.remove('current-slide');
-            targetSlide.classList.add('current-slide');
+            if (amountToMove <= -1200) {
+                track.style.transform = 'translateX(0px)';
+                slides.forEach((slide) => slide.classList.remove('current-slide'));
+                slides[0].classList.add('current-slide');
+            } else {
+                track.style.transform = 'translateX(-' + amountToMove + 'px)';
+                currentSlide.classList.remove('current-slide');
+                targetSlide.classList.add('current-slide');
+            }
         };
 
-        // Auto-slide functionality
         let autoSlideInterval = setInterval(() => {
             const currentSlide = track.querySelector('.current-slide') || slides[0];
-            let nextSlide = currentSlide.nextElementSibling || slides[0]; // Loop back to the first slide
+            let nextSlide;
+            if (slides.indexOf(currentSlide) >= slides.length - 3) {
+                nextSlide = slides[0];
+            } else {
+                nextSlide = currentSlide.nextElementSibling || slides[0];
+            }
             moveToSlide(currentSlide, nextSlide);
-        }, 3000); // Slide every 3 seconds
+        }, 3000);
 
-        // Manual navigation
         nextButton.addEventListener('click', () => {
             const currentSlide = track.querySelector('.current-slide') || slides[0];
-            let nextSlide = currentSlide.nextElementSibling || slides[0]; // Loop back to the first slide
+            let nextSlide;
+            if (slides.indexOf(currentSlide) >= slides.length - 3) {
+                nextSlide = slides[0];
+            } else {
+                nextSlide = currentSlide.nextElementSibling || slides[0];
+            }
             moveToSlide(currentSlide, nextSlide);
             resetAutoSlide();
         });
 
         prevButton.addEventListener('click', () => {
             const currentSlide = track.querySelector('.current-slide') || slides[0];
-            let prevSlide = currentSlide.previousElementSibling || slides[slides.length - 1]; // Loop to last slide
+            let prevSlide = currentSlide.previousElementSibling || slides[slides.length - 1];
             moveToSlide(currentSlide, prevSlide);
             resetAutoSlide();
         });
 
-        // Reset auto-slide interval on manual navigation
         const resetAutoSlide = () => {
             clearInterval(autoSlideInterval);
             autoSlideInterval = setInterval(() => {
                 const currentSlide = track.querySelector('.current-slide') || slides[0];
-                let nextSlide = currentSlide.nextElementSibling || slides[0]; // Loop back to the first slide
+                let nextSlide;
+                if (slides.indexOf(currentSlide) >= slides.length - 3) {
+                    nextSlide = slides[0];
+                } else {
+                    nextSlide = currentSlide.nextElementSibling || slides[0];
+                }
                 moveToSlide(currentSlide, nextSlide);
             }, 3000);
         };
 
-        // Initialize first slide as current
         slides[0].classList.add('current-slide');
 
-        // Adjust carousel on window resize
         window.addEventListener('resize', () => {
-            setSlidePosition(); // Recalculate slide positions on resize
+            setSlidePosition();
             const currentSlide = track.querySelector('.current-slide') || slides[0];
-            moveToSlide(currentSlide, currentSlide); // Adjust position to the current slide
+            moveToSlide(currentSlide, currentSlide);
         });
     });
 </script>
+
+
 
 
 
@@ -501,7 +569,7 @@
         - #GET START
       -->
 
-      <section class="section get-start">
+      <section class="section get-start" style="background-image: url('{% static 'states.webp' %}')">
         <div class="container">
 
           <h2 class="h2 section-title">Get started with 4 simple steps</h2>
@@ -585,105 +653,159 @@
       <!--
         - #BLOG
       -->
+<style>
+    /* Blog section container */
+.custom-blog-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+/* Section title */
+.custom-section-title {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Blog articles grid */
+.custom-blog-articles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Each blog article */
+.custom-article {
+    flex: 1;
+    min-width: 280px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.custom-article:hover {
+    transform: translateY(-5px);
+}
+
+/* Top image container */
+.custom-top-image {
+    position: relative;
+}
+
+.custom-image-wrapper {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.custom-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Category label */
+.custom-list-categories .custom-categories-name {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+/* Content styling */
+.custom-col-content {
+    padding: 15px;
+}
+
+.custom-top-detail-info {
+    display: flex;
+    gap: 10px;
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.custom-entry-title {
+    font-size: 18px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.custom-date {
+    color: #888;
+    font-size: 12px;
+}
+
+</style>
       <section class="section blog" id="blog">
       <div class="container">
 
-  <h2 class="h2 section-title">Quick Information</h2>
+  <h2 class="h2 section-title">Our Blog</h2>
 
-  <ul class="info-list has-scrollbar">
-
-    <li>
-      <div class="info-card">
-
-          <figure class="card-banner">
-              <img src="{% static 'offices.jpg' %}" alt="Office Relocation Update" loading="lazy" class="w-100">
-              <span class="btn card-badge">Update</span>
-        </figure>
-
-        <div class="card-content">
-          <h3 class="h3 card-title">Office Relocation Update</h3>
-          <p class="card-summary">
-            Our new office location is now open! Find us at the updated address for your appointments and queries.
-          </p>
+ <div class="custom-blog-section">
+    <div class="custom-blog-articles">
+        <div class="custom-article">
+            <article class="custom-post">
+                <div class="custom-top-image">
+                    <div class="custom-list-categories">
+                        <a href="#" class="custom-categories-name">Articles</a>
+                    </div>
+                    <figure class="custom-entry-thumb">
+                        <a href="{% url 'blog' %}">
+                            <div class="custom-image-wrapper">
+                                <img src="{% static 'blog.png' %}" alt="Blog Title">
+                            </div>
+                        </a>
+                    </figure>
+                </div>
+                <div class="custom-col-content">
+                    <div class="custom-top-detail-info clearfix">
+                        <span>admin</span>
+                        <span class="custom-date">October 1, 2023</span>
+                    </div>
+                    <h4 class="custom-entry-title">
+                        <a href="{% url 'blog' %}">Driving Satisfaction: Why AAA Auto Sales is a Customer Favorite</a>
+                    </h4>
+                </div>
+            </article>
         </div>
 
-      </div>
-    </li>
-
-    <li>
-      <div class="info-card">
-
-        <figure class="card-banner">
-          <img src="{% static 'tips.jpg' %}" alt="Top Car Maintenance Tips" loading="lazy" class="w-100">
-          <span class="btn card-badge">Tips</span>
-        </figure>
-
-        <div class="card-content">
-          <h3 class="h3 card-title">Top Car Maintenance Tips</h3>
-          <p class="card-summary">
-            Regularly check tire pressure, engine oil, and coolant to keep your car running smoothly.
-          </p>
+        <div class="custom-article">
+            <article class="custom-post">
+                <div class="custom-top-image">
+                    <div class="custom-list-categories">
+                        <a href="#" class="custom-categories-name">Articles</a>
+                    </div>
+                    <figure class="custom-entry-thumb">
+                        <a href="{% url 'blog_2' %}">
+                            <div class="custom-image-wrapper">
+                                <img src="{% static 'used-car-transport.jpg' %}" alt="Blog 1 Title">
+                            </div>
+                        </a>
+                    </figure>
+                </div>
+                <div class="custom-col-content">
+                    <div class="custom-top-detail-info clearfix">
+                        <span>admin</span>
+                        <span class="custom-date">September 19, 2023</span>
+                    </div>
+                    <h4 class="custom-entry-title">
+                        <a href="{% url 'blog_2' %}">AAA auto sales Recognized for Trust and Superior Service</a>
+                    </h4>
+                </div>
+            </article>
         </div>
+    </div>
+</div>
 
-      </div>
-    </li>
-
-    <li>
-      <div class="info-card">
-
-        <figure class="card-banner">
-          <img src="{% static 'electric.jpg' %}" alt="What’s New in the Car Market" loading="lazy" class="w-100">
-          <span class="btn card-badge">Market</span>
-        </figure>
-
-        <div class="card-content">
-          <h3 class="h3 card-title">What’s New in the Car Market</h3>
-          <p class="card-summary">
-            Electric cars are gaining popularity—check out the latest models from top manufacturers.
-          </p>
-        </div>
-
-      </div>
-    </li>
-
-    <li>
-      <div class="info-card">
-
-        <figure class="card-banner">
-          <img src="{% static 'road-safety.webp' %}" alt="Road Safety Tips" loading="lazy" class="w-100">
-          <span class="btn card-badge">Safety</span>
-        </figure>
-
-        <div class="card-content">
-          <h3 class="h3 card-title">Road Safety Tips</h3>
-          <p class="card-summary">
-            Always wear your seatbelt, follow speed limits, and avoid distractions while driving.
-          </p>
-        </div>
-
-      </div>
-    </li>
-
-    <li>
-      <div class="info-card">
-
-        <figure class="card-banner">
-          <img src="{% static 'fuel.jpg' %}" alt="How to Save on Fuel" loading="lazy" class="w-100">
-          <span class="btn card-badge">Savings</span>
-        </figure>
-
-        <div class="card-content">
-          <h3 class="h3 card-title">How to Save on Fuel</h3>
-          <p class="card-summary">
-            Keep your tires properly inflated, avoid rapid acceleration, and stick to regular maintenance.
-          </p>
-        </div>
-
-      </div>
-    </li>
-
-  </ul>
 
 </div>
 

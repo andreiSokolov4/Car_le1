@@ -5,8 +5,579 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a817ed96-61af-413b-881e-9cce32e569d7" name="Changes" comment="2.01 changed the dealership(logo)">
+      <change afterPath="$PROJECT_DIR$/home/static/Blog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/static/blog_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/static/states.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/static/used-car-transport.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/pages/Blog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/pages/blog_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/pages/blog_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2013_Nissan_Frontier_S/car_photos/37756fed5a363eeed2a57b608abf9e16(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2013_Nissan_Frontier_S/car_photos/3d33ab572310a3ce50d08621db68359b(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2013_Nissan_Frontier_S/car_photos/43f5cef313e55ccf561252df3dc05504(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2013_Nissan_Frontier_S/car_photos/45ad8b2cb962924f89c4078bda030d0d(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2013_Nissan_Frontier_S/car_photos/6ca4faef8ac4a7b92074d3038d50261b(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2013_Nissan_Frontier_S/car_photos/6d56ac5cff678b4f69672d9312f92aff(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2013_Nissan_Frontier_S/car_photos/74fe398a4fc72e254211df93fabefb2b(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2013_Nissan_Frontier_S/car_photos/8bf835a91c56de505ff1d48dbe529d0b(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2013_Nissan_Frontier_S/car_photos/92e1ce48762e4957ccbbbdab77d0f518(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2013_Nissan_Frontier_S/car_photos/ad806647f777587ef2772e7613bd46c5(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2013_Nissan_Frontier_S/car_photos/d5e3efde5784896524bf047c11a2c0b6(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2013_Nissan_Frontier_S/car_photos/e66b063d61e437e6a4ce0c3ca5bd9ac7(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2013_Nissan_Frontier_S/car_photos/eb3fdd896af14962d3fe642bfe531b72(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2013_Nissan_Frontier_S/car_photos/edit_1(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2013_Nissan_Frontier_S/car_photos/edit_2(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2013_Nissan_Frontier_S/car_photos/edit_3(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2013_Nissan_Frontier_S/edit_2(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2014_Jeepp_Wrangler_Unlimited/6b67026caa9181b081b5e31ca32029aa(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2014_Jeepp_Wrangler_Unlimited/car_photos/0118e06b6967c0b501999ef3938bac95(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2014_Jeepp_Wrangler_Unlimited/car_photos/1b028499a9d1c5e1c466f49d1cc96045(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2014_Jeepp_Wrangler_Unlimited/car_photos/1b5623d001d8bfe05f3aab1d61392a4f(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2014_Jeepp_Wrangler_Unlimited/car_photos/21e14ee2036356892bd089e230e06386(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2014_Jeepp_Wrangler_Unlimited/car_photos/21ff37a15fdccc57fd61e3d337a8915e(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2014_Jeepp_Wrangler_Unlimited/car_photos/28fb89542c527cc1b626a7903c1b2cf4(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2014_Jeepp_Wrangler_Unlimited/car_photos/572f9516a2591af85ae014c575876cf7(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2014_Jeepp_Wrangler_Unlimited/car_photos/6b5c1970e1903240e23851c46f9b28a4(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2014_Jeepp_Wrangler_Unlimited/car_photos/6b67026caa9181b081b5e31ca32029aa(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2014_Jeepp_Wrangler_Unlimited/car_photos/73ada29eb26d8b79db7dba8cca68456d(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2014_Jeepp_Wrangler_Unlimited/car_photos/7c9fa6f09b95efa4f304c76b83aff704(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2014_Jeepp_Wrangler_Unlimited/car_photos/8c049d6de3b0b5b7c6344ed0d79f3335(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2014_Jeepp_Wrangler_Unlimited/car_photos/8c41998096f813dd9547abe972f1e444(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2014_Jeepp_Wrangler_Unlimited/car_photos/a3b9b62c2beb504c60bfbf28ab4ea5fe(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2014_Jeepp_Wrangler_Unlimited/car_photos/ab6d4f3ccfcd455bddf5e9ba884b8cff(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2014_Jeepp_Wrangler_Unlimited/car_photos/bb48bf09ae9c29762707b69f026b32c4(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2014_Jeepp_Wrangler_Unlimited/car_photos/d16d54c083fbc1a729e06f1143f0bea2(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2014_Jeepp_Wrangler_Unlimited/car_photos/e80be67be49fb3f9dbdfc237c52b88d0(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2014_Jeepp_Wrangler_Unlimited/car_photos/edit_1_tzLMSIA(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2014_Jeepp_Wrangler_Unlimited/car_photos/edit_2(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2014_Jeepp_Wrangler_Unlimited/car_photos/edit_3_mAsOUXX(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2014_Jeepp_Wrangler_Unlimited/car_photos/f9d0e91c3c790a634af0fcdbc7a3be9e(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2015_Ford_Taurus/car_photos/0060d53a57912b4ff4afb7c1a9582fcf(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2015_Ford_Taurus/car_photos/148c278a46e64010a3388d65ae6ccce0(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2015_Ford_Taurus/car_photos/14fbeb36915b36bf76da69280f92eca9(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2015_Ford_Taurus/car_photos/17483b51024f0772c804e9f08d862d82(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2015_Ford_Taurus/car_photos/1c9f6fd389fa3a112191d239b0c318a5(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2015_Ford_Taurus/car_photos/531e451a7f0641a4a324c1dd9e6d8f9c(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2015_Ford_Taurus/car_photos/55545b2d38532cd161a8c53044b38829(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2015_Ford_Taurus/car_photos/8065bf26822be1d1ce5198ab5fd849a4(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2015_Ford_Taurus/car_photos/8848b43f0505157524a72c4121bbc1b4(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2015_Ford_Taurus/car_photos/92bed0cba90aae2d76395ca38da3926a(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2015_Ford_Taurus/car_photos/97f8dab309018ba15400ef1d4b8ec281(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2015_Ford_Taurus/car_photos/990cf59cb53d6b41f67b5f051199b451(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2015_Ford_Taurus/car_photos/9e9d939fd431d3d7502c15842816db6b(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2015_Ford_Taurus/car_photos/b3dc043e7a7b5930c48ff6e795f533d4(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2015_Ford_Taurus/car_photos/bc39dbb9e617a136705746a0a1d9bb2b(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2015_Ford_Taurus/car_photos/c40e318b8b8190f90b3cf87e4f1b82ff(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2015_Ford_Taurus/car_photos/c69d4c37b7fcb09b71cab8f98655d804(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2015_Ford_Taurus/car_photos/cbdb1db39aaaa0054d32ec907ada34fc(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2015_Ford_Taurus/car_photos/d4d201ee98d0b39c1c3c124b51cd3cdf(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2015_Ford_Taurus/car_photos/dc8b1951b91a7fd253d81d22208456e2(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2015_Ford_Taurus/car_photos/e09cb511c5c0717f84f535753091a6b4(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2015_Ford_Taurus/car_photos/edit_1(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2015_Ford_Taurus/car_photos/edit_2_eFtxtc8(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2015_Ford_Taurus/car_photos/edit_3_J5in0lR(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2015_Ford_Taurus/car_photos/f7ad961c57fbe31c10a3d82634bfa0cc(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2015_Ford_Taurus/edit_1(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2016_Chevrolet_Malibu_LS/car_photos/07086c2518236d5f70a1143de6deb9b1(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2016_Chevrolet_Malibu_LS/car_photos/0aff50f43aaeb0546a030ea93f25508d(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2016_Chevrolet_Malibu_LS/car_photos/20e6deaead91e5f4017eee34dbd88f3e(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2016_Chevrolet_Malibu_LS/car_photos/25827f31500662f1f423eb8410b902a0(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2016_Chevrolet_Malibu_LS/car_photos/299bc5f6d9a9bc75d4ac4f6c450873a6(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2016_Chevrolet_Malibu_LS/car_photos/42ce955da64cd112d8ff58cb20ba3ac6(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2016_Chevrolet_Malibu_LS/car_photos/504a7959ab5a0790584b8f457d5edca9(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2016_Chevrolet_Malibu_LS/car_photos/569728d335f0c5882715552a40a4a803(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2016_Chevrolet_Malibu_LS/car_photos/5f7ba0bd7d2df6a1e0ad3b67f792eb1c(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2016_Chevrolet_Malibu_LS/car_photos/6bfd257100978964d786345d0b7aae95(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2016_Chevrolet_Malibu_LS/car_photos/8e173e85c0f398dc64b208296d0abaa6(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2016_Chevrolet_Malibu_LS/car_photos/9f0b9a0c31f676fb71ebef64853e09f3(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2016_Chevrolet_Malibu_LS/car_photos/a7d1d7667bb1226fec1bee479c9b3664(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2016_Chevrolet_Malibu_LS/car_photos/c1d7062fc4629c387a82d6c220950a29(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2016_Chevrolet_Malibu_LS/car_photos/edit(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2016_Chevrolet_Malibu_LS/car_photos/edit_1_W4rAKBk(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2016_Chevrolet_Malibu_LS/car_photos/edit_2_x8hpxWu(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2016_Chevrolet_Malibu_LS/car_photos/edit_3_9UYX4Rz(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2016_Chevrolet_Malibu_LS/car_photos/edit_4(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2016_Chevrolet_Malibu_LS/car_photos/edit_5(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2016_Chevrolet_Malibu_LS/edit_4(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Silverado_1500_LT/car_photos/0ee154096402b0bd71fda9935328e1fe(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Silverado_1500_LT/car_photos/12eb2ac816ab8e9ba8d823ae595f1159(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Silverado_1500_LT/car_photos/2bbd18783ee357a267ddf51d4ad68ea3(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Silverado_1500_LT/car_photos/46ac0421edcfdda3dac1bbd446b96a86(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Silverado_1500_LT/car_photos/46bdf73b7516109cd515c9297dbaba84(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Silverado_1500_LT/car_photos/4d3354d045536903904792a42624440e(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Silverado_1500_LT/car_photos/523f281f7baf02baef1a9766fe45df9e(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Silverado_1500_LT/car_photos/6b28233c02907eb6d5034e07298541a8(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Silverado_1500_LT/car_photos/73829cd0793746d561ecf3c8bb8c0041(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Silverado_1500_LT/car_photos/7a7624830dd927b8f8a7ef85e60c4811(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Silverado_1500_LT/car_photos/835440fa9787b0d6a0d9419b5ae4b514(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Silverado_1500_LT/car_photos/83955ae026fa9f1950d2687624744857(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Silverado_1500_LT/car_photos/8d288b5f6fa31fcf4d99679f68003796(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Silverado_1500_LT/car_photos/95d6feae01efd765d8c3860f72868e7c(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Silverado_1500_LT/car_photos/99727743d7ec6390c8f28ffb7ec9944b(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Silverado_1500_LT/car_photos/a2adc46f46dfda556f5f9fbe70c467fc(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Silverado_1500_LT/car_photos/a6a728c56b7985b1020f10b3387241c9(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Silverado_1500_LT/car_photos/ab6923abb3590677c4bca86ed571c4ed(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Silverado_1500_LT/car_photos/b6069cf42dad2195a19b64ea43e40f0b(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Silverado_1500_LT/car_photos/cc3ac0d3a99952d0bf503477b68608c8(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Silverado_1500_LT/car_photos/d0d15cebf900fe8aef8c055e90de128d(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Silverado_1500_LT/car_photos/edic_1(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Silverado_1500_LT/car_photos/edic_2(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Silverado_1500_LT/car_photos/edic_3(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Silverado_1500_LT/car_photos/edic_4(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Silverado_1500_LT/car_photos/edic_5(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Silverado_1500_LT/car_photos/fcbdf268b5208d07432b66917289ed2e(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Silverado_1500_LT/edic_2(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Traverse_LT/car_photos/0c0d1e8d66a3dd1248ddc16e447a9b53(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Traverse_LT/car_photos/2f11f427f6c07b0360d4ce82a85f5804(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Traverse_LT/car_photos/2f94b70c78297c9035091df5b8170300(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Traverse_LT/car_photos/39160fc8a1ebd8d185556080de1c31f3(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Traverse_LT/car_photos/41b84370fa116d3049458b0a088f4180(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Traverse_LT/car_photos/4224bee4dbe0260f1a71f4182d733f21(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Traverse_LT/car_photos/4224bee4dbe0260f1a71f4182d733f21_3c0F0Un(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Traverse_LT/car_photos/47b8ac3d96d41532da2eb23831098145(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Traverse_LT/car_photos/59b5b1ded414c5b0469bd80f952ef758(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Traverse_LT/car_photos/76a4c3b7007e257755ad7a2d45d40a86(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Traverse_LT/car_photos/8fa804029df8cbd8e0540170f8eed362(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Traverse_LT/car_photos/91229c30f3cf4f2133d91e2e759f1e0d(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Traverse_LT/car_photos/9b3f0dccf971abe42110c870534cf1fe(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Traverse_LT/car_photos/a0abf04c4093e9136d686c7ad001345d(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Traverse_LT/car_photos/a86eb638aea75b1d94fc5ccfa9de5062(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Traverse_LT/car_photos/b2c0fb5229bb632c571fe8f31e0e891b(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Traverse_LT/car_photos/bc6235b14ffb9758a7241e0e5a12a788(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Traverse_LT/car_photos/bd548be6e97dbfa00bdbddcb605e7ad2(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Traverse_LT/car_photos/bd6d234e7b18f4ff5560e7c0b7310969(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Traverse_LT/car_photos/e5dd984a684a459c7e5a97296f7f5367(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Traverse_LT/car_photos/edit_1_wRCJuZC(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Traverse_LT/car_photos/edit_2_ayX1RX2(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Traverse_LT/car_photos/f1ad119cedc1be51e9ddf7b1df399e91(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Traverse_LT/car_photos/f8bc3b7773348ae1d040400314537854(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Chevrolet_Traverse_LT/edit_2_ayX1RX2(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Honda_Pilot_EX/car_photos/0049af9c75f07a648ebbf08aeb8d49a3(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Honda_Pilot_EX/car_photos/015e8d161327be2f2bdb01fb95695191(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Honda_Pilot_EX/car_photos/0b349a04becd01caa21711ffe507dfa4(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Honda_Pilot_EX/car_photos/0c52226365ec05d8393db6af55f355c4(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Honda_Pilot_EX/car_photos/213a222b86370f4c18e0f00c9c13e025(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Honda_Pilot_EX/car_photos/2c72fd43144d52fddbdb95a436096b79(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Honda_Pilot_EX/car_photos/3ca9a7d04b9596c769210017974936f7(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Honda_Pilot_EX/car_photos/3e1e2d63ecaf3e0885e34d5f83358314(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Honda_Pilot_EX/car_photos/425b0ed1506feb7e9669bd2751640aa0(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Honda_Pilot_EX/car_photos/4840a80034c49770c3a0ec35a03eb578(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Honda_Pilot_EX/car_photos/4f6853300acd54fbd6efc594e7febece(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Honda_Pilot_EX/car_photos/5028e3c7e3ddeb4358f6105151530dcd(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Honda_Pilot_EX/car_photos/5fe208b0244906cb7eb32e6d4884bcf4(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Honda_Pilot_EX/car_photos/6868d24f9342b53142c693571eba97bb(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Honda_Pilot_EX/car_photos/73b06085ba05e967a07c84557444d95b(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Honda_Pilot_EX/car_photos/76a9f29217adcac9f29238eb2744a362(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Honda_Pilot_EX/car_photos/7c548ecf01c0ed9f5bbd49e598866da4(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Honda_Pilot_EX/car_photos/7fbd3affd483c9b218f9a07b608479a9(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Honda_Pilot_EX/car_photos/818913f3e01b43ed4894d754eb57a7a6(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Honda_Pilot_EX/car_photos/8d97af1e8a675e559f3765b494c59d7d(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Honda_Pilot_EX/car_photos/938950ff681b0d755d8c495933dbd882(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Honda_Pilot_EX/car_photos/9779f08d90a81135d5530498aa6d863f(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Honda_Pilot_EX/car_photos/a5aeccf62ad30be2b55c646ff41f00f2(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Honda_Pilot_EX/car_photos/b07c77e5d54664ee446c7ff0e0611812(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Honda_Pilot_EX/car_photos/cc129352a8ea4f373dbf01d3f1480180(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Honda_Pilot_EX/car_photos/d3382fbe8ce559d89115b95cd6953172(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Honda_Pilot_EX/car_photos/da39a21d1d88d478e084f06380ddf211(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Honda_Pilot_EX/car_photos/edit_1_bKl66dP(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Honda_Pilot_EX/car_photos/edit_2_XFopGoz(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Honda_Pilot_EX/car_photos/ee9a90dbe4f11e0b0f28007892758c48(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Honda_Pilot_EX/car_photos/f2f27c78927bc4b3bffdf46bf1d133f5(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Honda_Pilot_EX/edit_1_bKl66dP(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Jeep_Wrangler_Unlimited/car_photos/004549d7cc7eca8b1c904938518212cd(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Jeep_Wrangler_Unlimited/car_photos/13867e1a74c6f8ab571709953c59f841(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Jeep_Wrangler_Unlimited/car_photos/191526f3a9b731d44b07a0054506f70c(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Jeep_Wrangler_Unlimited/car_photos/1bdd97ab9c167d563a74a96e25e63e38(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Jeep_Wrangler_Unlimited/car_photos/2f81a06e1c7c6d643b3f3c7eb6639936(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Jeep_Wrangler_Unlimited/car_photos/2fbf3067e51839b866749a6b1d2c3f5e(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Jeep_Wrangler_Unlimited/car_photos/34f8a9fb13cfa90b9d85a9894e049aed(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Jeep_Wrangler_Unlimited/car_photos/424bb2ef041dcbf4afe63f1aa952227d(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Jeep_Wrangler_Unlimited/car_photos/5694ce749bde594a330b7d82b7c70e1b(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Jeep_Wrangler_Unlimited/car_photos/8048c8b050a006d7a3f5b0c91bb33a24(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Jeep_Wrangler_Unlimited/car_photos/99cf46478a25e57279820d6a76700a4d(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Jeep_Wrangler_Unlimited/car_photos/9d0abd090b8993547d6f07ecacb1dad0(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Jeep_Wrangler_Unlimited/car_photos/b5fff3206f54ef150e10af25d4aeeadc(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Jeep_Wrangler_Unlimited/car_photos/cf7b55dfbff74f53a635730bc1ae3467(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Jeep_Wrangler_Unlimited/car_photos/d9c675e5e1741e1630bc5c8c7abbde74(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Jeep_Wrangler_Unlimited/car_photos/e518a6df7e437c303515ddf11825ff7b(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Jeep_Wrangler_Unlimited/car_photos/edit_2_8yYP1jH(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Jeep_Wrangler_Unlimited/car_photos/edit_3_KzMuBK1(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Jeep_Wrangler_Unlimited/car_photos/edit_4(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Jeep_Wrangler_Unlimited/car_photos/edit_5_OTaTdvh(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Jeep_Wrangler_Unlimited/car_photos/fc22ec2afa07a5e9cdefe48cdc0cec09(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2017_Jeep_Wrangler_Unlimited/edit_2_8yYP1jH(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Ford_Focus_SE/car_photos/068773b4b6fb977c2b7b7de2fd16bd47(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Ford_Focus_SE/car_photos/11818a007e6b64e19986539c62666863(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Ford_Focus_SE/car_photos/181f679aeb7a78055fe665898258d3b8(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Ford_Focus_SE/car_photos/22fabf48d18f565d678748361dc0f912(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Ford_Focus_SE/car_photos/24368ef48eb2831c28160ba190930e9b(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Ford_Focus_SE/car_photos/2d52efda6153125c32171747018d40a9(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Ford_Focus_SE/car_photos/3dda588ccf4ebabaf48652c9caafddaf(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Ford_Focus_SE/car_photos/3f3a64e5b4f10d7e61fe1f77a5f6eae0(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Ford_Focus_SE/car_photos/495a222fbccc5be6516594ef0ecf87a9(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Ford_Focus_SE/car_photos/618708c9379658eef4f8517bd0633e36(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Ford_Focus_SE/car_photos/618708c9379658eef4f8517bd0633e36_NBGPplJ(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Ford_Focus_SE/car_photos/68f7cb3c0ed72c88cb07c433ca842a46(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Ford_Focus_SE/car_photos/6ec0604b6ebb17a50d1ede77dd2b6526(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Ford_Focus_SE/car_photos/893473b432cc0686cb1a3c4170d60aac(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Ford_Focus_SE/car_photos/9036e3dbe314ab370826039877173b5d(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Ford_Focus_SE/car_photos/c32c6a12b4143fea8d354b2f4ef11933(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Ford_Focus_SE/car_photos/da4868de6c1e87c4c5c50aea6169fce2(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Ford_Focus_SE/car_photos/da4868de6c1e87c4c5c50aea6169fce2_ZQDmr3c(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Ford_Focus_SE/car_photos/e1c281f1aa9e22d1514c85c00ad9311d(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Ford_Focus_SE/car_photos/eedit_1(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Ford_Focus_SE/car_photos/eedit_2(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Ford_Focus_SE/car_photos/eedit_3(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Ford_Focus_SE/car_photos/f274e96495251125fcdf462e1aadf909(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Ford_Focus_SE/car_photos/f65f03e7b42c774423d32dd63ec30474(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Ford_Focus_SE/eedit_1(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Mitsubishi_Outlander_GT/car_photos/0cb4c844dbc8f1f1869d3dd39605b02b(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Mitsubishi_Outlander_GT/car_photos/1374e03139f59bffe869524f510ec94c(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Mitsubishi_Outlander_GT/car_photos/173cde36b967cdda56303c12ce43487b(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Mitsubishi_Outlander_GT/car_photos/276e8458ca70ede5dea2ba7e64c310da(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Mitsubishi_Outlander_GT/car_photos/2ff2fb21ddb9f80edac4874a465c19a7(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Mitsubishi_Outlander_GT/car_photos/4f92f58a268f430f7e5b3da27f8933b3(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Mitsubishi_Outlander_GT/car_photos/5db7d241862943cb910bcbbc2f2fdc36(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Mitsubishi_Outlander_GT/car_photos/7901f3cbb3ed95586c6a74141aab9b41(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Mitsubishi_Outlander_GT/car_photos/9ed7b6810fd0c5794025453bdcb064f0(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Mitsubishi_Outlander_GT/car_photos/b2e4adce3ec81140d7b1f87f2dee5097(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Mitsubishi_Outlander_GT/car_photos/becb7727915c4ee84531103bd7430431(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Mitsubishi_Outlander_GT/car_photos/cc4188fcb78f15e2fb6a56130a958760(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Mitsubishi_Outlander_GT/car_photos/cfc0e0c44e0339eeb07ad1d4a18d2d21(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Mitsubishi_Outlander_GT/car_photos/d40ea2894051a01146269fb22b2b4e46(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Mitsubishi_Outlander_GT/car_photos/d732b614fb7b4f8412f824e07cd8a8f6(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Mitsubishi_Outlander_GT/car_photos/ddf85587579ef7878c6f08ef4282e480(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Mitsubishi_Outlander_GT/car_photos/e9121be9059c5e32e97e1b9321181a9b(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Mitsubishi_Outlander_GT/car_photos/edit_1_gYuNZJr(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Mitsubishi_Outlander_GT/car_photos/edit_2_xtk25Vy(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Mitsubishi_Outlander_GT/car_photos/f9e787d3bf2c8c84b9d38bdbd185cb09(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Mitsubishi_Outlander_GT/edit_1_gYuNZJr(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Toyota_Tundra_Platinum/car_photos/0e7b0d0a12f3986d56af2dbc7870cb95(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Toyota_Tundra_Platinum/car_photos/20a87ed3a5740912b76eb44e7d54ac39(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Toyota_Tundra_Platinum/car_photos/2f8621db8ef35a93cd2b0f5d76f6f17d(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Toyota_Tundra_Platinum/car_photos/377c262cec312a19b1f5537a9c64724c(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Toyota_Tundra_Platinum/car_photos/4057f32d87cfc652db9a63bdf405c741(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Toyota_Tundra_Platinum/car_photos/4e9e01d6bc9e0ee2c698a9e843bf14a4(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Toyota_Tundra_Platinum/car_photos/532a86278c8c311297b4f27bbd19af56(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Toyota_Tundra_Platinum/car_photos/5b58ac20dfb31daf21293c38e87a7dbd(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Toyota_Tundra_Platinum/car_photos/7c1710a2d98206195d9e5a611cc69f09(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Toyota_Tundra_Platinum/car_photos/95f6b0bc05e954ecaccfe631ac6eebc6(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Toyota_Tundra_Platinum/car_photos/9ffe318a2985c47ad6a8ce7b16832da2(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Toyota_Tundra_Platinum/car_photos/a3e6431affe57eeba9d6616f2ad98114(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Toyota_Tundra_Platinum/car_photos/a417938a34455b32ec3bb108b3591efd(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Toyota_Tundra_Platinum/car_photos/a5702443e53d8ce6d48ad2b7fbe17b67(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Toyota_Tundra_Platinum/car_photos/c41ab27e6085da4d451655754dc0b44b(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Toyota_Tundra_Platinum/car_photos/d11df08d732015935a554c2445c09ded(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Toyota_Tundra_Platinum/car_photos/d3fbb9b7c621f986da4eb0c4fc887306(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Toyota_Tundra_Platinum/car_photos/edit_1_comt4gA(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Toyota_Tundra_Platinum/car_photos/editate_1(1).jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Toyota_Tundra_Platinum/car_photos/editate_2(1).jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Toyota_Tundra_Platinum/car_photos/editate_3(1).jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Toyota_Tundra_Platinum/car_photos/editate_4(1).jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2018_Toyota_Tundra_Platinum/editate_2(1).jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Acadia/car_photos/0bb4180a200f7185d7555d44023809d7(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Acadia/car_photos/11315576656bf82b286df3f4d36b20d4(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Acadia/car_photos/2214cf765a7c100b3386c75762bf41bc(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Acadia/car_photos/2e701333818e901d2bb5d63fd3f0e673(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Acadia/car_photos/446142d9cfe10d943ebf52e2d7cc6176(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Acadia/car_photos/4f0ec534a730917e152f230e1444e627(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Acadia/car_photos/4f22d1cf39bd14b016b0efe3a6cd4d77(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Acadia/car_photos/61743f522a40844c1dd87a0b2094f6dc(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Acadia/car_photos/63ad9bcb4a4803094f8bbd6824761c91(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Acadia/car_photos/756a3dcd52f2fd11fa954555b740dbd6(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Acadia/car_photos/7e0db5aba29c7cfe84b05c284334a012(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Acadia/car_photos/89029651ae3fa5df2cf9ed9339b00cb7(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Acadia/car_photos/8962e54e941a7b2931374d5746eeaa6a(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Acadia/car_photos/8fdf35519bd1bc410997c2d689b366da(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Acadia/car_photos/96534c16339a421bf335dfd787813ff0(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Acadia/car_photos/a59d63e2321a197fd0b13f8ca4e5b098(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Acadia/car_photos/b6e5632db1a061f86cd31b35c739740b(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Acadia/car_photos/d44a1c3dcff77e15683e4a3244b424c7(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Acadia/car_photos/editt_2(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Acadia/car_photos/editt_3(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Acadia/car_photos/editt_4(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Acadia/car_photos/editt_5(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Acadia/editt_2(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Terrain_SLT/car_photos/008f3399b8c0f1fe8af707b160f2169a(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Terrain_SLT/car_photos/020fc33b5e0f381355feeeb64fd2d588(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Terrain_SLT/car_photos/07be86382d71642763a793983c0c2560(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Terrain_SLT/car_photos/121f562027f659bc5952519065ac865a(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Terrain_SLT/car_photos/25353ddf761c5a6ac21398213f605175(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Terrain_SLT/car_photos/396fb0f58642ca003054dd7ff2c09432(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Terrain_SLT/car_photos/39bbf8402ad5b98813a9bdc64e2e75c2(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Terrain_SLT/car_photos/4d5a8256acaadf20a6ccf736689be064(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Terrain_SLT/car_photos/5059285fb2d6ca01f3b9f78a6bf924f2(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Terrain_SLT/car_photos/66f61ff539b5793ce75671d52a3ab0bd(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Terrain_SLT/car_photos/7533a3ed53aaaa98b7d7450570abaea4(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Terrain_SLT/car_photos/7bc5c8cafde8a700e355f6818598b1f7(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Terrain_SLT/car_photos/a646ffc74ee5dca62613d11f5c0abab0(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Terrain_SLT/car_photos/b481e03c426c2fe8d5e6cac3bc27f4bf(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Terrain_SLT/car_photos/d185936edd78122096b6b5c7dc8f2a8a(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Terrain_SLT/car_photos/d9c73b4db59d225b3bd20031e557d67d(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Terrain_SLT/car_photos/d9c73b4db59d225b3bd20031e557d67d_srqmhyH(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Terrain_SLT/car_photos/edit_1_6eSJZY7(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Terrain_SLT/car_photos/edit_2_OihjChM(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Terrain_SLT/car_photos/edit_3_cQ2aFFJ(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Terrain_SLT/car_photos/edit_PQeNVWV(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Terrain_SLT/car_photos/ee328f39b1f09ff6a7cbd4b90036e89f(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Terrain_SLT/car_photos/f606f7d583bd27950affd32b7abfa082(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2019_GMC_Terrain_SLT/edit_1_6eSJZY7(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Equinox_LT/car_photos/12e08afa2d63607e5f727e3349f7151e(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Equinox_LT/car_photos/14c9cd9cc6d6416dba67927f68c519f1(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Equinox_LT/car_photos/23c4003d588543e537b2611d24d4d303(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Equinox_LT/car_photos/309d85342ac4167bdd472d3c4a578b4d(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Equinox_LT/car_photos/39b2998f02ef9601449f0cc43711dd11(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Equinox_LT/car_photos/3ca15834be8fa58f7aa3b9f477646275(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Equinox_LT/car_photos/4569f72867218fa9284417de9d627511(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Equinox_LT/car_photos/4c2693f262362b632b3a93f6ecb0d47c(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Equinox_LT/car_photos/751ebce9accb582588f98451b9f5b694(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Equinox_LT/car_photos/a43f7f0da3c9fbc879920a166a6af63a(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Equinox_LT/car_photos/a672af307045b826531be630d58f1398(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Equinox_LT/car_photos/b054b8f5227ceb8ec5fe631270a6f22e(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Equinox_LT/car_photos/d0a4be7cea1d3e0aa7ecd30abbad36fd(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Equinox_LT/car_photos/d254232b71c54efe8fc1f23f5aeeac01(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Equinox_LT/car_photos/e1e7cdcbbccab03e71ad43867eb5c4f5(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Equinox_LT/car_photos/edit_1_uDwjpwH(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Equinox_LT/car_photos/edit_2_wu8Nkqv(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Equinox_LT/car_photos/edit_3_W2MKZcW(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Equinox_LT/car_photos/edit_4_bEfIpRS(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Equinox_LT/edit_2_wu8Nkqv(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Silverado_1500_LTZ/1_6(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Silverado_1500_LTZ/car_photos/1(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Silverado_1500_LTZ/car_photos/1_1(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Silverado_1500_LTZ/car_photos/1_1(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Silverado_1500_LTZ/car_photos/1_2(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Silverado_1500_LTZ/car_photos/1_3(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Silverado_1500_LTZ/car_photos/1_4(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Silverado_1500_LTZ/car_photos/1_5(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Silverado_1500_LTZ/car_photos/1_6(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Silverado_1500_LTZ/car_photos/1_7(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Silverado_1500_LTZ/car_photos/2(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Silverado_1500_LTZ/car_photos/2_10(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Silverado_1500_LTZ/car_photos/2_11(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Silverado_1500_LTZ/car_photos/2_12(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Silverado_1500_LTZ/car_photos/2_2(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Silverado_1500_LTZ/car_photos/2_3(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Silverado_1500_LTZ/car_photos/2_4(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Silverado_1500_LTZ/car_photos/2_5(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Silverado_1500_LTZ/car_photos/2_6(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Silverado_1500_LTZ/car_photos/2_7(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Silverado_1500_LTZ/car_photos/2_9(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Silverado_1500_LTZ/car_photos/3_1(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Silverado_1500_LTZ/car_photos/3_4(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Silverado_1500_LTZ/car_photos/3_5(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Silverado_1500_LTZ/car_photos/3_6(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Silverado_1500_LTZ/car_photos/3_7(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Silverado_1500_LTZ/car_photos/3_8(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Silverado_1500_LTZ/car_photos/3_9(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Traverse_LT/car_photos/1691a6b54be5ef809bb4dba5b61d7add(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Traverse_LT/car_photos/2218702ef66fb11c8226cb6bc8ddacf6(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Traverse_LT/car_photos/277723d119ec957efdf00ce13ce3d7bf(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Traverse_LT/car_photos/28584c8e0001e318bec9e6a2854eb1a3(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Traverse_LT/car_photos/2f2601f2878a73c95a3e8cbbbd3011eb(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Traverse_LT/car_photos/350563958b4e2d961c221b5b3f9343bb(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Traverse_LT/car_photos/4ee5ccb67c37808b60c21b08f1fb37d9(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Traverse_LT/car_photos/515d48c6150c11d61daaf6e8b7a2bf82(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Traverse_LT/car_photos/5673846d148649a610c3e57b4226d98b(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Traverse_LT/car_photos/597da9c173dc75c133de1b0951bc22cd(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Traverse_LT/car_photos/74d1ab763102ae93e57e39a84cd900c5(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Traverse_LT/car_photos/80344d6a6ab84b002f5022f58c23c507(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Traverse_LT/car_photos/88534b1c1645f09e297204838871e722(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Traverse_LT/car_photos/94d1f83e3da8f6861c54a20c4f8d585d(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Traverse_LT/car_photos/9aaab81da575cc5b2839599ebe2d71ff(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Traverse_LT/car_photos/a93284442682ffbea2e534f252342a1d(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Traverse_LT/car_photos/ac382c38f9edfcf20ed9a1e798db6933(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Traverse_LT/car_photos/b1321f82f6882ac33295ee77901b96e1(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Traverse_LT/car_photos/b3f0637664c629dc1a923bd356bf9eeb(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Traverse_LT/car_photos/b46ac36063dc525ab94fada5b8b90d67(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Traverse_LT/car_photos/b8644e3a09a0fcf90ebeef3972218bf4(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Traverse_LT/car_photos/dbcf9cc72aed3674c721101fd53fe8c4(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Traverse_LT/car_photos/editt_1(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Traverse_LT/car_photos/editt_2(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Chevrolet_Traverse_LT/editt_1(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Ford_F-150_Raptor/car_photos/04497d8b7de889eec50efcb5298e24ae(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Ford_F-150_Raptor/car_photos/07c1ea94901382d42667cbb324353893(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Ford_F-150_Raptor/car_photos/0e8fa518a2547961e2329f7b45bbdb6d(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Ford_F-150_Raptor/car_photos/19645331e872e35120ef708b0d1691ac(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Ford_F-150_Raptor/car_photos/287418d535202576d469c7145cdac6b8(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Ford_F-150_Raptor/car_photos/2d54feb25a8e469822b92cc4985ab70d(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Ford_F-150_Raptor/car_photos/32ed3e6e45470a35ed663f04cacb71ea(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Ford_F-150_Raptor/car_photos/49beb25a98a0eac0b425760e67ce0a04(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Ford_F-150_Raptor/car_photos/4cf71ede2b2d55f42b7b7305a3bf4fac(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Ford_F-150_Raptor/car_photos/4d44adf9c0b3602ccaf382481aa3d79c(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Ford_F-150_Raptor/car_photos/4dd7bbe4b4d2e5a73669775ae4745607(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Ford_F-150_Raptor/car_photos/55d59ac7685398b40eac69c5d2ab0f33(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Ford_F-150_Raptor/car_photos/5cb86d013b75d5dbaae183c00e3b3ca7(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Ford_F-150_Raptor/car_photos/63291cd442594fb7da52a8fbaa4b7a9d(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Ford_F-150_Raptor/car_photos/6961c474955228b6aa4d2816ad862124(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Ford_F-150_Raptor/car_photos/6961c474955228b6aa4d2816ad862124_OCTyEu9(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Ford_F-150_Raptor/car_photos/6db072cf2e8895de6ce01be86c0ff1fa(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Ford_F-150_Raptor/car_photos/6e12affe93a7bbce57ff856dd35f031f(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Ford_F-150_Raptor/car_photos/7546510d355ef3e61a8ccfc9c6447f36(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Ford_F-150_Raptor/car_photos/77451ea904a0cedade2aa31514d0c052(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Ford_F-150_Raptor/car_photos/7a7fe097b648862c62690f6be391e9e4(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Ford_F-150_Raptor/car_photos/86b509a58779c02f7a4ffd698f623b4c(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Ford_F-150_Raptor/car_photos/918bd1f661f56968b67786f54dd1833c(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Ford_F-150_Raptor/car_photos/aa37838805df963e1700d38b13ad65be(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Ford_F-150_Raptor/car_photos/c556073d99816ba8cfff0cc8778220aa(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Ford_F-150_Raptor/car_photos/c55b12b3571c3abee937d470529ddc20(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Ford_F-150_Raptor/car_photos/ca0fd03b5b4113de91fc84ae910bc713(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Ford_F-150_Raptor/car_photos/cc609a8880b93ff4f856f4ab989dda26(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Ford_F-150_Raptor/car_photos/d255fff08cc34c168e4915ddb8011543(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Ford_F-150_Raptor/car_photos/dc6e0cddaf123d4acfeb4da35e7b1636(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Ford_F-150_Raptor/car_photos/e893d602a0fc1f43819678441d636209(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Ford_F-150_Raptor/car_photos/edit(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2020_Ford_F-150_Raptor/edit(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Chevrolet_Trax_LT/car_photos/0aaf1026fd0605d1a513470525c7adc1(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Chevrolet_Trax_LT/car_photos/314bb77944c5b5b235922c5be3e47685(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Chevrolet_Trax_LT/car_photos/370df1698c5930823da905bd42938bcf(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Chevrolet_Trax_LT/car_photos/380b48d4e9110086956091252d5a6e41(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Chevrolet_Trax_LT/car_photos/3c8794e00e4fca61ff605ec03afc8e47(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Chevrolet_Trax_LT/car_photos/463ad67e3f4d4332ddc8dc3d682683a1(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Chevrolet_Trax_LT/car_photos/49acde003c0363fbb137700f76805a70(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Chevrolet_Trax_LT/car_photos/5da6fc6944b66176eab0d11166434c8f(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Chevrolet_Trax_LT/car_photos/5f8807db2c73d015e070822ed2ec1804(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Chevrolet_Trax_LT/car_photos/72aa3c0a40bb9b57c309a7b2b5aec698(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Chevrolet_Trax_LT/car_photos/740d5787baff0bd4f7d7ad8aefdc3caf(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Chevrolet_Trax_LT/car_photos/742c228fbb1935ea6033cb91589038df(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Chevrolet_Trax_LT/car_photos/85a583f3b821aacadddcdd61ba7d9529(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Chevrolet_Trax_LT/car_photos/87376700c53b74863911c9fb1a7fcfaa(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Chevrolet_Trax_LT/car_photos/92c04cb4b94370439b14f4d79ae36b91(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Chevrolet_Trax_LT/car_photos/9c343522085ac43b9aefe7a73876f4e1(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Chevrolet_Trax_LT/car_photos/b8d169d55b7cd9ba88f310db92799310(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Chevrolet_Trax_LT/car_photos/c2beffc5d7d288929a43864966671cce(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Chevrolet_Trax_LT/car_photos/d1f69db6d620d661b742e3d8f8785815(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Chevrolet_Trax_LT/car_photos/d589c7594c229570aea6724a12e3a513(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Chevrolet_Trax_LT/car_photos/edit_1(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Chevrolet_Trax_LT/car_photos/edit_2(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Chevrolet_Trax_LT/car_photos/edit_3(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Chevrolet_Trax_LT/car_photos/edit_4(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Chevrolet_Trax_LT/car_photos/edit_5(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Chevrolet_Trax_LT/car_photos/edit_6(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Chevrolet_Trax_LT/edit_6(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Ford_Escort_SE/car_photos/074af78f5e4171ee0f0895f81be4d7f8(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Ford_Escort_SE/car_photos/0a7efd27a4ac9f92719ee4919b3878f2(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Ford_Escort_SE/car_photos/0f737cc6f31cb57b7bb3d4484e14c319(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Ford_Escort_SE/car_photos/12126e0f770df1d2d381c386b6a2845d(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Ford_Escort_SE/car_photos/1403ca8d9f4e235bbc3ac6453dd539de(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Ford_Escort_SE/car_photos/1f93c1f079ee20b3f0a60b8fc66faaf2(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Ford_Escort_SE/car_photos/24a72f980acf3e21018dba7d5da6c282(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Ford_Escort_SE/car_photos/2fe9bf564678c150ca9aa9f757d5fdff(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Ford_Escort_SE/car_photos/4d3ce7d474f3cf7997f2cd274955b9a9(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Ford_Escort_SE/car_photos/596720a33584a28c55686a7c5ca1a4d1(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Ford_Escort_SE/car_photos/5a846f5a73a7fa85be4c251a674e054b(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Ford_Escort_SE/car_photos/5ee611372c2dfb9d5fa5c49b234bad47(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Ford_Escort_SE/car_photos/6b5eab31601152d2d6213cab22d14cab(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Ford_Escort_SE/car_photos/73744fa452a9c1aea72e63317531c022(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Ford_Escort_SE/car_photos/934ae10ce9e4629d4e954b946a5d29de(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Ford_Escort_SE/car_photos/a2145651ae59f54e4d9a60078f03c281(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Ford_Escort_SE/car_photos/c2716973f3ab9d871d6b0d0e2201fbef(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Ford_Escort_SE/car_photos/caafb847aac0d64131c60c7c98b42cc3(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Ford_Escort_SE/car_photos/edit_1_glz5KSS(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Ford_Escort_SE/car_photos/edit_2_mgdr6V3(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Ford_Escort_SE/car_photos/edit_3(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Ford_Escort_SE/car_photos/fe0bffa5b52bc70bc228a20820366988(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2021_Ford_Escort_SE/edit_3(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Hyundai_Tucson_SEL/car_photos/0a591eac366d22fbb1057ff6017a63b4(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Hyundai_Tucson_SEL/car_photos/0ddf6519745b6100989cea7283ecc699(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Hyundai_Tucson_SEL/car_photos/103abdc88427f26a7d6553b84ee3c676(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Hyundai_Tucson_SEL/car_photos/26bbae251cf5279268837d340e352e30(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Hyundai_Tucson_SEL/car_photos/2e3e3d426ea8e61b939bedebc8e4b827(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Hyundai_Tucson_SEL/car_photos/2e693ac953c8aac576e10e5e8e9dd591(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Hyundai_Tucson_SEL/car_photos/46a37ea4b46203f2735a58aca37f5506(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Hyundai_Tucson_SEL/car_photos/516a5e127ded2af16b236a7da6757ba0(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Hyundai_Tucson_SEL/car_photos/5a3756b8495ea8e7a5ede3df4a9fb322(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Hyundai_Tucson_SEL/car_photos/64db08208c0e75186c3563e4cea925ac(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Hyundai_Tucson_SEL/car_photos/6a20e7bc2c896d5238adaa34d3f7f71f(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Hyundai_Tucson_SEL/car_photos/7043ef705916d805e2289264f62fe666(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Hyundai_Tucson_SEL/car_photos/73970bc26b8420a4cbcfdc51d8d18889(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Hyundai_Tucson_SEL/car_photos/779c6d34129caf387cc384c6e525e60f(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Hyundai_Tucson_SEL/car_photos/81cbd52f76206eb1bbf54c6970e687bd(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Hyundai_Tucson_SEL/car_photos/a139862e52d1370c7e0e9c545e4ec0ab(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Hyundai_Tucson_SEL/car_photos/aa61b3eab018e53003dd2f8e8c3de959(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Hyundai_Tucson_SEL/car_photos/ad1b287c794fcad2e258dbdfa670a009(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Hyundai_Tucson_SEL/car_photos/ad731295016dd53658588302af3813ff(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Hyundai_Tucson_SEL/car_photos/b4a452c517786a5a512d108ff8c6540f(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Hyundai_Tucson_SEL/car_photos/bdad573501c3ec61c64106f85331090d(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Hyundai_Tucson_SEL/car_photos/cbf0f0195a59b08b68b4d7c967a6ad9d(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Hyundai_Tucson_SEL/car_photos/d08b25b09d4eaff27c694d036894a9d1(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Hyundai_Tucson_SEL/car_photos/e5111bf7088b20ee636f0704318abdbf(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Hyundai_Tucson_SEL/car_photos/edit_1_ElujXcz(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Hyundai_Tucson_SEL/car_photos/edit_2(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Hyundai_Tucson_SEL/car_photos/edit_3_h1z8HoM(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Hyundai_Tucson_SEL/car_photos/edit_4_ItaM4xH(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Hyundai_Tucson_SEL/car_photos/fd899644f7d6fc769eaf455ec3610932(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Hyundai_Tucson_SEL/edit_2(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Kia_Sorento_LX/car_photos/038e18bee8d1590bdfe11314cb3b9ae2(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Kia_Sorento_LX/car_photos/091d5ca81e083ca9baa996be575689e5(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Kia_Sorento_LX/car_photos/1e2612be7dcc0cff624ea835e6d5707f(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Kia_Sorento_LX/car_photos/232dcd8c8924b904e120ffd5cd39537b(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Kia_Sorento_LX/car_photos/3189166a74a13284a093d3948efd2330(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Kia_Sorento_LX/car_photos/389f921a0bb78c26f81412de29df228c(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Kia_Sorento_LX/car_photos/3ae0810f939e9f2416ba9d25d6ce152d(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Kia_Sorento_LX/car_photos/3b19c96e7b61fbb4afbf1ed6eca86fe8(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Kia_Sorento_LX/car_photos/49f2801d7d2b2ae21c5fab9e91b34c2a(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Kia_Sorento_LX/car_photos/4c513d701160d22af4b0e9071ca380f9(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Kia_Sorento_LX/car_photos/7a07abb6ff52fd9b6c5f5c99fe01ec00(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Kia_Sorento_LX/car_photos/7cba4c18da79fcdafe51e426a77db340(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Kia_Sorento_LX/car_photos/9441459faf3b7986f3403c1e2fd43c2d(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Kia_Sorento_LX/car_photos/94c47a34eae0407cd12e0dc3a0462703(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Kia_Sorento_LX/car_photos/999a925ecc7f2236b14879c4c7bb5f2d(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Kia_Sorento_LX/car_photos/a234465fa042e19b17b97842724d69ac(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Kia_Sorento_LX/car_photos/a8c424b65363ac57c23466c32ce1e1ef(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Kia_Sorento_LX/car_photos/ab13c9011e6abe10ec9ba7040a05330f(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Kia_Sorento_LX/car_photos/c12ccbdb9d8abfb316fa068390f6cd06(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Kia_Sorento_LX/car_photos/c812879df341c54f6bc339e692c24785(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Kia_Sorento_LX/car_photos/da9c2e4a8495b0341f2052145a6fe14d(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Kia_Sorento_LX/car_photos/e31ab4c9c249067b7cb273b4b843d1db(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Kia_Sorento_LX/car_photos/e905fe75c020974145141a8f344b550e(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Kia_Sorento_LX/car_photos/eddt_1(1)(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Kia_Sorento_LX/car_photos/eddt_1(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Kia_Sorento_LX/car_photos/eddt_2(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Kia_Sorento_LX/eddt_1(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Nissan_Murano_SV/car_photos/0cb9e4815d313cfc7b1e65da91845fdf(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Nissan_Murano_SV/car_photos/0d69ed9201f63067f5ba37f99f0fa70b(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Nissan_Murano_SV/car_photos/1375524f94393fdee4b26be2c9106dfa(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Nissan_Murano_SV/car_photos/13b269d08df42bf0c2eb284cc2c3082b(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Nissan_Murano_SV/car_photos/1bf48adbdd2c3923ac04b85cebecd9c2(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Nissan_Murano_SV/car_photos/21c604063ede6420b025451805151589(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Nissan_Murano_SV/car_photos/233e80ec34459cd4e5999d6de5102a89(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Nissan_Murano_SV/car_photos/42a90f6fac0d8cc1fd46452a48cff157(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Nissan_Murano_SV/car_photos/5110c61f8751e37305b56ec967d3bb57(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Nissan_Murano_SV/car_photos/598ca09f83dcbba108bef880e8eff5a2(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Nissan_Murano_SV/car_photos/5d7cf7f6f49886c27957d215380a8968(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Nissan_Murano_SV/car_photos/7e3225728d255296195d37a928dc1a18(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Nissan_Murano_SV/car_photos/822067cdcb25a7f8c6d2c15dd572059b(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Nissan_Murano_SV/car_photos/898538007a7dea794b4120fcc5db607c(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Nissan_Murano_SV/car_photos/8dfd966308e218436c93a59a70c9c7ab(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Nissan_Murano_SV/car_photos/a1619c2802dfc2ded9f9cecdc3fc8c3b(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Nissan_Murano_SV/car_photos/abe1f1268347167eb65dc7484f5ae9ff(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Nissan_Murano_SV/car_photos/da22490b0d4a5e3f4cbb49859125d8bf(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Nissan_Murano_SV/car_photos/dcff11d92d4267cf3a6c7601a688917d(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Nissan_Murano_SV/car_photos/e85c078fdcbc19e3676df02b2b0257b9(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Nissan_Murano_SV/car_photos/e92637aa0ee0019eea82ea68f3160e2a(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Nissan_Murano_SV/car_photos/eb0a49eafc1b02f80b9cdd73e6139237(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Nissan_Murano_SV/car_photos/ed4c0ff467e762eadcfb72e9d81348d2(1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Nissan_Murano_SV/car_photos/edit_1(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Nissan_Murano_SV/car_photos/edit_2_5Pssyin(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Nissan_Murano_SV/car_photos/edit_3_C2TIiQP(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/2022_Nissan_Murano_SV/edit_1(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/Blog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/blog_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/states.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/used-car-transport.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/management/commands/migrate_photos.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/management/commands/migrate_photos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/main.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/main.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/pages/car_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/pages/car_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/pages/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/pages/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/pages/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/pages/listings.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/pages/listings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/pages/top.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/pages/top.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/main.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/main.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +594,8 @@
       <list>
         <option value="JavaScript File" />
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -45,28 +616,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "django.template.preview.state": "SHOW_EDITOR",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Acer/Desktop/master4-master/home/static",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Acer/Desktop/master4-master/home/static&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
       <console-settings module-name="2webmarket-master" is-module-sdk="true" working-directory="$PROJECT_DIR$">
@@ -208,7 +779,9 @@
       <workItem from="1729274587585" duration="12768000" />
       <workItem from="1729618137430" duration="16273000" />
       <workItem from="1729697189441" duration="215000" />
-      <workItem from="1729697416212" duration="3063000" />
+      <workItem from="1729697416212" duration="3699000" />
+      <workItem from="1729709731587" duration="1203000" />
+      <workItem from="1730129576184" duration="22097000" />
     </task>
     <task id="LOCAL-00001" summary="1.0">
       <option name="closed" value="true" />
@@ -514,7 +1087,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729699680087</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="2.01 changed the dealership(logo)">
+      <option name="closed" value="true" />
+      <created>1729701475658</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1729701475658</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

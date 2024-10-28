@@ -36,6 +36,15 @@ def index(request):
 def about_us(request):
     return render(request, 'pages/About_us.html')
 
+def blog(request):
+    return render(request, 'pages/Blog.html')
+
+def blog_1(request):
+    return render(request, 'pages/blog_1.html')
+
+def blog_2(request):
+    return render(request, 'pages/blog_2.html')
+
 def financing(request):
     return render(request, 'pages/Financing.html')
 

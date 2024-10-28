@@ -20,6 +20,9 @@ path('financing/', views.financing, name='financing'),
 
 path('shipping/', views.shipping, name='shipping'),
 
+path('blog/', views.blog, name='blog'),
+    path('blog_1/', views.blog_1, name='blog_1'),
+    path('blog_2/', views.blog_2, name='blog_2'),
 path('dealer_warranty/', views.dealer_warranty, name='dealer_warranty'),
 
 path('contact_us/', views.contact_us, name='contact_us'),

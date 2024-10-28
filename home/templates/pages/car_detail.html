@@ -87,124 +87,7 @@
 				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-d33a63b e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="d33a63b" data-element_type="container">
-					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-29b9f41 e-con-full e-flex e-con e-child" data-id="29b9f41" data-element_type="container">
-				<div class="elementor-element elementor-element-6def7fb elementor-widget elementor-widget-apus_element_detail_listing_title" data-id="6def7fb" data-element_type="widget" data-widget_type="apus_element_detail_listing_title.default">
-				<div class="elementor-widget-container">
-						<div class="listing-detail-title ">
-							</div>
-					</div>
-				</div>
-				<div class="elementor-element elementor-element-067fd40 elementor-widget elementor-widget-apus_element_detail_listing_tagline" data-id="067fd40" data-element_type="widget" data-widget_type="apus_element_detail_listing_tagline.default">
-				<div class="elementor-widget-container">
-						<div class="listing-detail-tagline ">
-							</div>
-					</div>
-				</div>
 
-            <style>
-                .car-detail-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    border-radius: 8px;
-}
-
-.car-info-header {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.car-title {
-    font-size: 2em;
-    margin: 0;
-    color: #333;
-}
-
-.car-detail-info {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.car-info-item {
-    display: flex;
-    align-items: center;
-    background: #e8e8e8;
-    padding: 10px 20px;
-    border-radius: 5px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-}
-
-.car-info-item i {
-    font-size: 1.5em;
-    margin-right: 10px;
-    color: #555;
-}
-
-.car-info-value {
-    font-weight: bold;
-    color: #333;
-}
-
-.car-info-suffix {
-    margin-left: 5px;
-    font-size: 0.9em;
-    color: #777;
-}
-            </style>
-
-
-
-
-		 <div class="car-detail-container">
-        <div class="car-info-header">
-            <h2 class="car-title">{{ car.year }} {{ car.mark }} {{ car.model }}</h2>
-        </div>
-        <div class="car-detail-info">
-            <div class="car-info-item">
-                <i aria-hidden="true" class="flaticon-calendar-1"></i>
-                <span class="car-info-value">{{ car.year }}</span>
-            </div>
-            <div class="car-info-item">
-                <i aria-hidden="true" class="flaticon-speedometer"></i>
-                <span class="car-info-value">{{ car.miles }}</span>
-                <span class="car-info-suffix">miles</span>
-            </div>
-            <div class="car-info-item">
-                <i aria-hidden="true" class="flaticon-gearbox"></i>
-                <span class="car-info-value">
-                    <a class="listing-tax" href="#">{{ car.transmission }}</a>
-                </span>
-            </div>
-            <div class="car-info-item">
-                <i aria-hidden="true" class="flaticon-gasoline-pump"></i>
-                <span class="car-info-value">
-                    <a class="listing-tax" href="#">{{ car.fuel_type }}</a>
-                </span>
-            </div>
-        </div>
-    </div>
-				</div>
-		<div class="elementor-element elementor-element-315a451 e-con-full e-flex e-con e-child" data-id="315a451" data-element_type="container">
-
-				<div class="elementor-element elementor-element-89f8dd8 elementor-widget elementor-widget-apus_element_detail_listing_price" data-id="89f8dd8" data-element_type="widget" data-widget_type="apus_element_detail_listing_price.default">
-				<div class="elementor-widget-container">
-						<div class="listing-detail-price ">
-				<div class="listing-price d-flex align-items-baseline"><div class="main-price"><span class="suffix">$ {{ car.price }} </span><span class="price-text"></span></div></div>							</div>
-					</div>
-				</div>
-		<div class="elementor-element elementor-element-33702f6 e-flex e-con-boxed e-con e-child" data-id="33702f6" data-element_type="container">
-					<div class="e-con-inner">
-					</div>
-				</div>
-				</div>
-					</div>
-				</div>
 		<div class="elementor-element elementor-element-29ad673 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="29ad673" data-element_type="container">
 					<div class="e-con-inner">
 		<div class="elementor-element elementor-element-773c1bf e-con-full e-flex e-con e-child" data-id="773c1bf" data-element_type="container">
@@ -215,7 +98,7 @@
     <div class="row row-10">
                     <div class="col-md-7 col-12">
                 <div class="listing-single-gallery-wrapper">
-                        <a href="{{ car.photo.url }}" data-elementor-lightbox-slideshow="boxcar-gallery" class="p-popup-image">
+                        <a href="###" data-index="0" data-elementor-lightbox-slideshow="boxcar-gallery" class="p-popup-image open-modal">
                             <div class="image-wrapper">
                                                    <img width="812" height="550" src="{{ car.photo.url }}" class="attachment-812x550x1x1 size-812x550x1x1" alt="{{ car.mark }} {{ car.model }}">
 
@@ -368,7 +251,7 @@
         <div class="row row-10">
             {% for photo in photos|slice:":5" %}
             <div class="col-6">
-                <a href="#" data-url="{{ photo.image.url }}" class="p-popup-image open-modal" data-index="{{ forloop.counter0 }}">
+                <a href="#" data-url="{{ photo.image.url }}" class="p-popup-image open-modal" data-index="{{ forloop.counter0|add:+2 }}">
                     <div class="image-wrapper">
                         <img width="284" height="270" src="{{ photo.image.url }}" class="attachment-284x270x1x1 size-284x270x1x1" alt="{{ car.mark }} {{ car.model }} photo">
                         <div class="hover-text">All Photos</div>
@@ -414,36 +297,60 @@
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper('.swiper-container', {
-            zoom: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next-custom',
-                prevEl: '.swiper-button-prev-custom',
-            },
-            lazy: {
-                loadPrevNext: true,
-            },
-        });
+    // Initialize Swiper
+    var swiper = new Swiper('.swiper-container', {
+        zoom: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next-custom',
+            prevEl: '.swiper-button-prev-custom',
+        },
+        lazy: {
+            loadPrevNext: true,
+        },
+    });
 
-        // Open Modal and Set Initial Slide
-        document.querySelectorAll('.open-modal').forEach(function(element) {
-            element.addEventListener('click', function(event) {
-                event.preventDefault();
-                var index = element.getAttribute('data-index');
+    // Move the last slide to the first position
+    var slides = document.querySelectorAll('.swiper-slide');
+    if (slides.length > 1) {
+        var lastSlide = slides[slides.length - 1];
+        document.querySelector('.swiper-wrapper').insertBefore(lastSlide, slides[0]);
+    }
+
+    // Open Modal and Set Initial Slide
+    document.querySelectorAll('.open-modal').forEach(function(element) {
+        element.addEventListener('click', function(event) {
+            event.preventDefault();
+            var index = parseInt(element.getAttribute('data-index')) - 1; // Subtract 1 here
+
+            // Check if index is -1 to set {{ car.main_photo.url }} as initial slide
+            if (index === -2) { // This will be -1 after subtraction, so check for -2 here
+                // Find the slide that has the image with {{ car.main_photo.url }}
+                var mainPhotoSlide = Array.from(document.querySelectorAll('.swiper-slide')).findIndex(slide =>
+                    slide.querySelector('img').src.includes("{{ car.main_photo.url }}")
+                );
+
+                // Set the slide to main photo if found, otherwise default to first slide
+                swiper.slideTo(mainPhotoSlide !== -1 ? mainPhotoSlide : 0, 0, false);
+            } else {
                 swiper.slideTo(index, 0, false);
-                document.getElementById('photoModal').style.display = 'block';
-            });
-        });
+            }
 
-        // Close Modal
-        document.getElementsByClassName('close')[0].addEventListener('click', function() {
-            document.getElementById('photoModal').style.display = 'none';
+            // Open modal
+            document.getElementById('photoModal').style.display = 'block';
         });
-    </script>
+    });
+
+    // Close Modal
+    document.getElementsByClassName('close')[0].addEventListener('click', function() {
+        document.getElementById('photoModal').style.display = 'none';
+    });
+</script>
+
+
 
 
 
@@ -558,8 +465,127 @@
 				</div>
 					</div>
 				</div>
+        		<div class="elementor-element elementor-element-d33a63b e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="d33a63b" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-29b9f41 e-con-full e-flex e-con e-child" data-id="29b9f41" data-element_type="container">
+				<div class="elementor-element elementor-element-6def7fb elementor-widget elementor-widget-apus_element_detail_listing_title" data-id="6def7fb" data-element_type="widget" data-widget_type="apus_element_detail_listing_title.default">
+				<div class="elementor-widget-container">
+						<div class="listing-detail-title ">
+							</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-067fd40 elementor-widget elementor-widget-apus_element_detail_listing_tagline" data-id="067fd40" data-element_type="widget" data-widget_type="apus_element_detail_listing_tagline.default">
+				<div class="elementor-widget-container">
+						<div class="listing-detail-tagline ">
+							</div>
+					</div>
+				</div>
+
+            <style>
+                .car-detail-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.car-info-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.car-title {
+    font-size: 2em;
+    margin: 0;
+    color: #333;
+}
+
+.car-detail-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.car-info-item {
+    display: flex;
+    align-items: center;
+    background: #e8e8e8;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.car-info-item i {
+    font-size: 1.5em;
+    margin-right: 10px;
+    color: #555;
+}
+
+.car-info-value {
+    font-weight: bold;
+    color: #333;
+}
+
+.car-info-suffix {
+    margin-left: 5px;
+    font-size: 0.9em;
+    color: #777;
+}
+            </style>
+
+
+
+
+		 <div class="car-detail-container">
+        <div class="car-info-header">
+            <h2 class="car-title">{{ car.year }} {{ car.mark }} {{ car.model }}</h2>
+        </div>
+        <div class="car-detail-info">
+            <div class="car-info-item">
+                <i aria-hidden="true" class="flaticon-calendar-1"></i>
+                <span class="car-info-value">{{ car.year }}</span>
+            </div>
+            <div class="car-info-item">
+                <i aria-hidden="true" class="flaticon-speedometer"></i>
+                <span class="car-info-value">{{ car.miles }}</span>
+                <span class="car-info-suffix">miles</span>
+            </div>
+            <div class="car-info-item">
+                <i aria-hidden="true" class="flaticon-gearbox"></i>
+                <span class="car-info-value">
+                    <a class="listing-tax" href="#">{{ car.transmission }}</a>
+                </span>
+            </div>
+            <div class="car-info-item">
+                <i aria-hidden="true" class="flaticon-gasoline-pump"></i>
+                <span class="car-info-value">
+                    <a class="listing-tax" href="#">{{ car.fuel_type }}</a>
+                </span>
+            </div>
+        </div>
+    </div>
+				</div>
+		<div class="elementor-element elementor-element-315a451 e-con-full e-flex e-con e-child" data-id="315a451" data-element_type="container">
+
+				<div class="elementor-element elementor-element-89f8dd8 elementor-widget elementor-widget-apus_element_detail_listing_price" data-id="89f8dd8" data-element_type="widget" data-widget_type="apus_element_detail_listing_price.default">
+				<div class="elementor-widget-container">
+						<div class="listing-detail-price ">
+				<div class="listing-price d-flex align-items-baseline"><div class="main-price"><span class="suffix">$ {{ car.price }} </span><span class="price-text"></span></div></div>							</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-33702f6 e-flex e-con-boxed e-con e-child" data-id="33702f6" data-element_type="container">
+					<div class="e-con-inner">
+					</div>
+				</div>
+				</div>
+					</div>
+				</div>
 		<div class="elementor-element elementor-element-07cad98 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="07cad98" data-element_type="container">
 					<div class="e-con-inner">
+
 		<div class="elementor-element elementor-element-5d8629c e-con-full e-flex e-con e-child" data-id="5d8629c" data-element_type="container">
 		<div class="elementor-element elementor-element-82627a5 elementor-hidden-desktop elementor-hidden-tablet e-flex e-con-boxed e-con e-child" data-id="82627a5" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
